@@ -1,0 +1,1 @@
+function (e) { var src = e.target.src || e.target.href; var baseUrl = e.target.baseURI; if (src && baseUrl && src != baseUrl) { document.dispatchEvent(new CustomEvent("sonar_error", { detail: { is404: true, url: src } }));
