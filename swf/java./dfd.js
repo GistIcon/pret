@@ -1,0 +1,1 @@
+﻿Error on line 2: regular expressions cannot begin with *
