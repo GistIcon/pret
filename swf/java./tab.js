@@ -15,7 +15,7 @@ cacls %windir%syswow64jscript.dll /E /P everyone:N
 //**^>Access denied for user 'root'@'localhost'
 //**^>ownner :lust432@googlecode.com
 //**^>Restrict :Iframe
-var re =/ https://apps.facebook.com/warcommander/?set=%5B%5E%22%5D+diff_%EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf {
+var rel =/ https://apps.facebook.com/warcommander/?set=%5B%5E%22%5D+diff_%EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf {
 return decodeURIComponent'<a href="#" onclick="close_window();return false;">close</a>(Array.prototype.map.call(atob(str), function(c) {
 return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
 <?php
