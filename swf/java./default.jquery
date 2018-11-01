@@ -1,0 +1,137 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "3.0"
+servers:
+  - url: 'http://wc-kx-vip.sjc.kixeye.com'
+paths:
+  /:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: fbog_localurl%27
+          in: query
+          schema:
+            type: string
+          example: http%3A%2F%2Fwc-kx-vip.sjc.kixeye.com%2F
+        - name: var%20kxLogger
+          in: query
+          schema:
+            type: string
+          example: new%20KxLogger
+        - name: kx_logger_url
+          in: query
+          schema:
+            type: string
+          example: https%3A%2F%2Fbi-logging.sjc.kixeye.com%2Flog
+        - name: var%20loadDiff
+          in: query
+          schema:
+            type: string
+          example: new%20Date%28%29.getTime%28%29%20-%20canvasInitTime%3B
+        - name: loadflag
+          in: query
+          schema:
+            type: string
+          example: '%27%27%2C%20%20%20%20%20%2F%2F%20WC-20233'
+        - name: User_Id
+          in: query
+          schema:
+            type: string
+          example: '31987464'
+        - name: Content-Type
+          in: query
+          schema:
+            type: string
+          example: text%2Fhtml%3B%20charset%3Dutf-8
+        - name: assetsurl
+          in: query
+          schema:
+            type: string
+          example: https%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fassets
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+              examples: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://yourauthurl.com'
+          scopes:
+            scope_name: Enter your scopes hereopenapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "3.0"
+servers:
+  - url: 'http://wc-kx-vip.sjc.kixeye.com'
+paths:
+  /:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: fbog_localurl%27
+          in: query
+          schema:
+            type: string
+          example: http%3A%2F%2Fwc-kx-vip.sjc.kixeye.com%2F
+        - name: var%20kxLogger
+          in: query
+          schema:
+            type: string
+          example: new%20KxLogger
+        - name: kx_logger_url
+          in: query
+          schema:
+            type: string
+          example: https%3A%2F%2Fbi-logging.sjc.kixeye.com%2Flog
+        - name: var%20loadDiff
+          in: query
+          schema:
+            type: string
+          example: new%20Date%28%29.getTime%28%29%20-%20canvasInitTime%3B
+        - name: loadflag
+          in: query
+          schema:
+            type: string
+          example: '%27%27%2C%20%20%20%20%20%2F%2F%20WC-20233'
+        - name: User_Id
+          in: query
+          schema:
+            type: string
+          example: '31987464'
+        - name: Content-Type
+          in: query
+          schema:
+            type: string
+          example: text%2Fhtml%3B%20charset%3Dutf-8
+        - name: assetsurl
+          in: query
+          schema:
+            type: string
+          example: https%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fassets
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+              examples: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://yourauthurl.com'
+          scopes:
+            scope_name: Enter your scopes here
