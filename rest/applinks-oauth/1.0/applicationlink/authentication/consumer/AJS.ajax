@@ -1,0 +1,10 @@
+        AJS.$.ajax({
+                       url: AJS.params.baseURL + "/rest/applinks-oauth/1.0/applicationlink/" + id
+                            + "/authentication/consumer",
+                       type: "PUT",
+                       contentType: "application/json",
+                       data: JSON.stringify(secondPayload),
+                       processData: false
+                   }).done(function (msg) {
+            window.alert("Done");
+        });
