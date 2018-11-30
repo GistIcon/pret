@@ -1,0 +1,11 @@
+    $(document).ready(function () {
+        $("#bugreplay-create").on('click', function (e) {
+            e.preventDefault();
+            execute('POST');
+        });
+        $("#bugreplay-delete").on('click', function (e) {
+            e.preventDefault();
+            execute('DELETE');
+        });
+        execute('GET');
+    });
