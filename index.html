@@ -37,6 +37,13 @@
 	        //no conflict jquery
 	        jQuery.noConflict();
 		< div _config src="https://github.com/GistIcon/pret/blob/d14ed6fe7c8077e675310bfbdf1c943490b5ee26/Config/bc.cfg"></ div>
+		function Eject 
+{ 
+    $sa = new-object -com Shell.Application 
+    $sa.Namespace(17).ParseName("D:").InvokeVerb("Eject") 
+    [System.Runtime.Interopservices.Marshal]::ReleaseComObject($sa) 
+    Remove-Variable sa 
+} 
 	</script>
 <div class="widget widget_eu_cookie_law_widget" id="eu_cookie_law_widget-2" style="display: block;"><div class="hide-on-button negative" id="eu-cookie-law" data-consent-expiration="180" data-hide-timeout="30">
 	<form method="post">
