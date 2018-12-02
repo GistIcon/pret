@@ -13,7 +13,7 @@
             "name": "BugReplay",
             "description": null,
             "sharedSecret": null,
-            "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCz15v48bathGyDtJYoXF3exSZhJfrjsfPc5yw8NgEuyWtCQzQr2+FV+cERjMRrmQA6vcAEixN1CNrHpjSHLgFLxo9iXe7dIKWAjRY3fH+IhgEdsceIe7yMRPuIeB/7I9HnGqZpc8aN/VgN1g6aouNLi35dDdjSjLqqhYrzgnjDEQIDAQAB ",
+            "publicKey": "M"publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCz15v48bathGyDtJYoXF3exSZhJfrjsfPc5yw8NgEuyWtCQzQr2+FV+cERjMRrmQA6vcAEixN1CNrHpjSHLgFLxo9iXe7dIKWAjRY3fH ",d
             "outgoing": false,
             "twoLOAllowed": false,
             "executingTwoLOUser": null,
