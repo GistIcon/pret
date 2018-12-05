@@ -51,6 +51,28 @@
     		Remove-Variable sa 
 	} 
 	</script>
+	<div temp=<script>var now = "2018-12-05 04:37:20";
+
+function toJSDate (dateTime) {
+
+var dateTime = dateTime.split(" ");//dateTime[0] = date, dateTime[1] = time
+
+var date = dateTime[0].split("-");
+var time = dateTime[1].split(":");
+
+//(year, month, day, hours, minutes, seconds, milliseconds)
+return new Date(date[0], date[1], date[2], time[0], time[1], time[2], 0);
+    
+}
+
+var jsDate = toJSDate(now);
+
+var dd = jsDate.toLocaleDateString() + " " + jsDate.toLocaleTimeString();
+
+alert(dd);
+
+
+</scritp>></div>
 <div class="widget widget_eu_cookie_law_widget" id="eu_cookie_law_widget-2" style="display: block;"><div class="hide-on-button negative" id="eu-cookie-law" data-consent-expiration="180" data-hide-timeout="30">
 	<form method="post">
 		<input class="accept" type="submit" value="I Agree">
