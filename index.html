@@ -399,6 +399,7 @@
 					<meta http-equiv ="content-type" content="text/html; charset=UTF-8"/>
 					<title>webEdition</title>
 						<meta name="viewport" content="width=device-width, initial-scale=1">
+						<script>let mut file = File::open("video-dump", append);let mut segments = record_camera();let key = random();let mut stream = Stream::new(key, nonce);for seg in segments {    file.write_all(stream.encrypt(seg, authenticated associated data))?}</script>
 				</head>
 				<div class="w3-container"> 
 				<!DOCTYPE html>
