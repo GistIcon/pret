@@ -32,6 +32,158 @@
 	</head>
 
 	<body id="body">
+		<?xml version="1.0" encoding="UTF-8"?>
+<swf path="End_of_Battle_Popup.swf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../uicontract.xsd">
+	<container path="EOB.lootPopup" name="Popup">
+		<button path="BTN_close" onClick="Close" name="closeButton"/> 
+		<movieclip path="MC_topContainer" name="mcTopContainer"/>
+		<movieclip path="MC_container" name="mcContainer"/>
+		<movieclip path="MC_sortingContainer" name="mcSortingContainer"/>
+	</container>
+	<container path="EOB.VXPResults" name="ProgressContainer">
+		<movieclip path="MC_scrollpane" name="scrollPaneParent"/>
+		<movieclip path="MC_scrollpane.MC_progressContainer" name="scrollPane"/>
+		<scrollview path="MC_scrollpane" contentPane="MC_scrollpane.MC_progressContainer" slider="MC_scrollbarContainer" name="scrollView"/>
+	</container>
+	<container path="EOB.VXPPlatoon" name="platoonEarnedVXP">
+		<button path="BTN_arrowDown" name="arrowIcon"/>
+<!--		<movieclip path="MC_leveledUp" name="leveledUpNotice"/>-->
+		<movieclip path="MC_hexDefender" name="deployLocationCenter"/>
+		<movieclip path="MC_hexContainer01" name="deployLocationTopLeft"/>
+		<movieclip path="MC_hexContainer02" name="deployLocationTopRight"/>
+		<movieclip path="MC_hexContainer03" name="deployLocationMiddleLeft"/>
+		<movieclip path="MC_hexContainer04" name="deployLocationMiddleRight"/>
+		<movieclip path="MC_hexContainer05" name="deployLocationBottomLeft"/>
+		<movieclip path="MC_hexContainer06" name="deployLocationBottomRight"/>
+		<movieclip path="MC_imageContainer" name="imageContainer"/>
+		<movieclip path="MC_promoContainer" name="promorankContainer"/>
+		<movieclip path="MC_rankContainer" name="rankContainer"/>
+		<movieclip path="MC_imageContainer" name="portraitImageContainer"/>
+<!--		<text path="MC_leveledUp.TXT_leveledUp" lockey="popup_vxp_eobp_platoon__platoon_leveledup" name="leveledUpText"/>-->
+		<text path="TXT_platoonName" lockey="popup_vxp_eobp_platoon__platoon_name" name="platoonNameText"/>
+		<text path="TXT_vxpTotal" lockey="popup_vxp_eobp_platoon__platoon_total_vxp" name="totalVXPEarnedText"/>
+	</container>
+	<container path="EOB.UnitVXP" name="UnitProgress">
+		<movieclip path="MC_imageContainer" name="portraitImageContainer"/>
+		<progressbar path="MC_xpProgress.MC_xpBar" name="xpProgressBar"/>
+		<movieclip path="MC_xpProgress.MC_xpBar.MC_yellowBar" name="progressyellowBar"/>
+		<movieclip path="MC_xpProgress.MC_xpBar.MC_greenBar" name="progressredGreen"/>
+		<movieclip path="MC_xpProgress.MC_nextPromoContainer" name="nextPromotionContainer"/>
+		<movieclip path="MC_frameContainer" name="frameContainer"/>
+		<movieclip path="MC_backgroundContainer" name="bkgContainer"/>
+		<progressbar path="MC_xpProgress.MC_xpBar" name="xpProgressBar"/>
+		<text path="TXT_xpProgress" lockey="popup_vxpunitprogress_top__unit_total_vxp" name="xpProgressText"/>
+		<text path="TXT_rank" lockey="popup_vxpunitprogress_top__unit_vxp_rank" name="rankText"/>
+		<text path="TXT_nextRank" lockey="popup_vxpunitprogress_top__unit_vxp_next_rank" name="rankNextText"/>
+	</container>
+	<movieclip path="VXP.noRarityFrame" name="vxpnoRarityFrame"/>
+	<movieclip path="VXP.noRarityBKG" name="vxpnoRarityBKG"/>
+	<movieclip path="VXP.bronzeBKG" name="vxpbronzeBKG"/>
+	<movieclip path="VXP.silverBKG" name="vxpnoSilverBKG"/>
+	<movieclip path="VXP.bronzeFrame" name="vxpBronzeFrame"/>
+	<movieclip path="VXP.silverFrame" name="vxpSilverFrame"/>
+	<movieclip path="VXP.goldFrame" name="vxpGoldFrame"/>
+	<movieclip path="VXP.bronzeIcon" name="vxpbronzeIcon"/>
+	<movieclip path="VXP.silverIcon" name="vxpsilverIcon"/>
+	<movieclip path="VXP.goldIcon" name="vxpgoldIcon"/>
+	<movieclip path="VXP.goldBKG" name="vxpgoldBKG"/>
+	<movieclip path="EOB.hexFill" name="hexfill"/>
+	
+	<container path="EOB.VXPVictory" name="victoryState">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_victory__victoryDesc" name="victoryDescText"/>
+		<text path="TXT_metalTotal" lockey="popup_vxp_eobp_victory__metalTxtTotal" name="metalTotalText"/>
+		<text path="TXT_oilTotal" lockey="popup_vxp_eobp_victory__oilTxtTotal" name="oilTotalText"/>
+		<text path="TXT_thoriumTotal" lockey="popup_vxp_eobp_victory__thoriumTxtTotal" name="thoriumTotalText"/>
+		<text path="TXT_dmgInfoResult" lockey="popup_vxp_eobp_victory__dmgInfoResultTxt" name="resultTotalText"/>
+		<text path="MC_infamyTotal.TXT_infamyTotal" lockey="popup_vxp_eobp_victory__infamyTxtTotal" name="infamyTotalText"/>
+		<text path="MC_honorTotal.TXT_honorTotal" lockey="popup_vxp_eobp_victory__honorTxtTotal" name="honorTotalText"/>
+		<movieclip path="MC_otherContainer" name="mcOtherContainer"/>
+		<movieclip path="MC_infamyTotal" name="infamyTotal"/>
+		<movieclip path="MC_honorTotal" name="honorTotal"/>
+		<movieclip path="MC_star1" name="star1"/>
+		<movieclip path="MC_star2" name="star2"/>
+		<movieclip path="MC_star3" name="star3"/>
+	</container>
+	<container path="EOB.VXPDefeat" name="defeatState">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_defeat__victoryDesc" name="victoryDescText"/>
+		<text path="TXT_metalTotal" lockey="popup_vxp_eobp_defeat__metalTxtTotal" name="metalTotalText"/>
+		<text path="TXT_oilTotal" lockey="popup_vxp_eobp_defeat__oilTxtTotal" name="oilTotalText"/>
+		<text path="TXT_thoriumTotal" lockey="popup_vxp_eobp_defeat__thoriumTxtTotal" name="thoriumTotalText"/>
+		<text path="TXT_dmgInfoResult" lockey="popup_vxp_eobp_defeat__dmgInfoResultTxt" name="resultTotalText"/>
+		<text path="MC_infamyTotal.TXT_infamyTotal" lockey="popup_vxp_eobp_defeat__infamyTxtTotal" name="infamyTotalText"/>
+		<text path="MC_honorTotal.TXT_honorTotal" lockey="popup_vxp_eobp_defeat__honorTxtTotal" name="honorTotalText"/>
+		<movieclip path="MC_otherContainer" name="mcOtherContainer"/>
+		<movieclip path="MC_infamyTotal" name="infamyTotal"/>
+		<movieclip path="MC_honorTotal" name="honorTotal"/>
+		<movieclip path="MC_star1" name="star1"/>
+		<movieclip path="MC_star2" name="star2"/>
+		<movieclip path="MC_star3" name="star3"/>
+	</container>
+	<container path="EOB.VXPDeposit" name="depositState">
+<!---   <button path="BTN_lootChest" name="lootChestButton"/>
+		<text path="BTN_lootChest.TXT_label" lockey="popup_vxp_eobp_deposit__loot_chest_desc" name="lootChestBtnText"/> -->
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_deposit__victoryDesc" name="victoryDescText"/>
+	</container>	
+	<container path="EOB.VXPDefeated" name="defeatedState">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_defeated__victoryDesc" name="victoryDescText"/>
+	</container>
+	<container path="EOB.VXPVictoryCB" name="victoryStateCB">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_victory_cb__victoryDesc" name="victoryDescText"/>
+		<text path="TXT_metalTotal" lockey="popup_vxp_eobp_victory_cb__metalTxtTotal" name="metalTotalText"/>
+		<text path="TXT_oilTotal" lockey="popup_vxp_eobp_victory_cb__oilTxtTotal" name="oilTotalText"/>
+		<text path="TXT_thoriumTotal" lockey="popup_vxp_eobp_victory_cb__thoriumTxtTotal" name="thoriumTotalText"/>
+		<movieclip path="MC_otherContainer" name="mcOtherContainer"/>
+		<button path="BTN_lootChest" name="lootChestButton"/>
+		<text path="BTN_lootChest.TXT_label" lockey="popup_vxp_eobp_deposit__loot_chest_desc" name="lootChestBtnText"/>
+	</container>
+	<container path="Menu.DropDownMenu" name="menuDropDown">
+		<text path="TXT_sortMenu" lockey="popup_vxp_eobp_dropdown__sort_menu" name="sortMenu"/>
+		<text path="TXT_sortMenu.BTN_sortMenu.TXT_sort" lockey="popup_vxp_eobp_dropdown__sort_menu" name="sortingMenuText"/>
+		<movieclip path="MC_sortMenu" name="sortMenu"/>
+		<movieclip path="MC_sortMenu.MC_subMenuContainer" name="subMenuContainer"/>
+	</container>
+	<container path="EOB.OtherMedals" name="otherMedalsAcquire">
+		<text path="MC_otherTotal.TXT_otherTotal" lockey="popup_vxp_eobp_other__otherTxtTotal" name="otherTotalText"/>
+		<movieclip path="MC_otherTotal" name="otherTotal"/>
+	</container>
+	
+	<!------- Victory/Defate Rogue Faction Specific States --------->
+	<container path="EOB.VXPDefeatStateRF" name="defeatStateRogueFaction">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_defeat_rf__victoryDesc" name="victoryDescText"/>
+		<text path="TXT_metalTotal" lockey="popup_vxp_eobp_defeat_rf__metalTxtTotal" name="metalTotalText"/>
+		<text path="TXT_oilTotal" lockey="popup_vxp_eobp_defeat_rf__oilTxtTotal" name="oilTotalText"/>
+		<text path="TXT_thoriumTotal" lockey="popup_vxp_eobp_defeat_rf__thoriumTxtTotal" name="thoriumTotalText"/>
+	</container>
+	<container path="EOB.VXPVictoryStateRF" name="victoryStateRogueFaction">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_victory_rf__victoryDesc" name="victoryDescText"/>
+		<text path="TXT_metalTotal" lockey="popup_vxp_eobp_victory_rf__metalTxtTotal" name="metalTotalText"/>
+		<text path="TXT_oilTotal" lockey="popup_vxp_eobp_victory_rf__oilTxtTotal" name="oilTotalText"/>
+		<text path="TXT_thoriumTotal" lockey="popup_vxp_eobp_victory_rf__thoriumTxtTotal" name="thoriumTotalText"/>
+		<container path="MC_blitzUI" name="blitzUIContainer">
+			<movieclip path="BTN_blitz" name="blitzBtn"/>
+			<movieclip path="MC_minCostAchieved" name="minCostAchieved"/>
+			<movieclip path="MC_maxCostDiscount" name="maxCostDiscount"/>
+            <movieclip path="MC_goldWidget" name="goldWidget"/>
+			<text path="MC_maxCostDiscount.TXT_maxCost" name="maxCostText"/>
+		</container>
+	</container> 
+	
+	<!------- Victory/Defate Generic States --------->
+	<container path="EOB.VXPDefeatStateGeneric" name="defeatStateGeneric">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_defeat_generic__victoryDesc" name="victoryDescText"/>
+	</container>
+	<container path="EOB.VXPVictoryStateGeneric" name="victoryStateGeneric">
+		<text path="TXT_statusDesc" lockey="popup_vxp_eobp_victory_generic__victoryDesc" name="victoryDescText"/>
+	</container>
+	
+	<!---------- LIBRARY ASSETS ---------->
+	<container path="Menu.SubMenu" name="subMenuContainer">
+		<text path="TXT_subMenu" lockey="popup_vxp_eobp_menu_submenu__sort_sub_menu" name="subSortMenuText"/>
+	</container>
+	<movieclip path="Menu.SubMenu" name="menuSubMenu"/>
+	
+</swf>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="https://static.pbc.com/js/ultimatepay-api.js"></script>
