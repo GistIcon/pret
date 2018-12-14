@@ -1,6 +1,6 @@
 describe('angularjs homepage', function() {
   it('should greet the named user', function() {
-    browser.get('http://www.angularjs.org');
+    browser.get('http://gisticon.github.io');
 
     element(by.model('yourName')).sendKeys('Julie');
 
@@ -13,7 +13,7 @@ describe('angularjs homepage', function() {
     var todoList;
 
     beforeEach(function() {
-      browser.get('http://www.angularjs.org');
+      browser.get('http://gisticon.github.io');
 
       todoList = element.all(by.repeater('todo in todoList.todos'));
     });
