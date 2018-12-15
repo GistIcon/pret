@@ -246,6 +246,7 @@
 			var rsakey   = ' 2048 37 18953949829700894035984213890878574272405586925969721577936593501487969045250345162699197078294286499755693919719763332689835557699222589757641466497873622555440825297401075368310383513033515936940058919460744199740102480960933840411189433856383854970071293689182854239897004866816855415824426188538675712030657126852453778200522544696525322796616189990364693377174986939291016851915072512247400133389175049034544889434938529417990858639381019318459681667187430355289538945894051961873437556305008727413140358765692538192206365107422591521533435665145255230869515768040056089190403638495478958838410731224909076933889 WarCommander'
 			var gamename = 'War Commander';
 			var user     = {"id":31987464,"ip":"45.76.131.83","uid":null,"fbid":null,"kxid":"f6e075ffde064389954aabba","tpid":false,"first_name":null,"last_name":""};
+			var footer   = '<div style="margin-top: 8px; padding-top: 8px; padding-bottom: 8px; background: #000000; text-align: center;"><strong><span style="font-size: 8pt; color: #ffffff;">Having problems getting Flash Player to play on Chrome? We've built a plugin to solve that problem for War Commander. <a href="https://wc-kx-vip.sjc.kixeye.com/canvas?kixigned_request=Y6HZ1ykgfChj763xJ3npP1rX2df4bEf5uglSOcalfgg=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ4NTAwMzUsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE4MC4yNTIuMjQwLjIyMiJ9&kxlToken=8939b9249c9f605abac73ac56872b484f973c1ed111c30e0cb64c3f3f1aa050e&kx_locale=en_?~$ref=https://gisticon.github.io/pret/#" target="KIXEYE">CLICK HERE</a></span></strong></div>'
 			var fbdata   = 'kxid=f6e075ffde064389954aabba&a=216862461657375&g=warcommander&username=parameter_555&email=%7E555_parameter%40api.kixeye.com&expireAt=1544704366&status=active&userIp=36.70.249.72&signed_request=kzQyy0N_n41zqDgMpSEZrfNdacbHmU87sc2CVUvjfLM%3D.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ3MDQzNjYsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjM2LjcwLjI0OS43MiJ9';
 	
 			window.KXPoptions = { 
@@ -286,12 +287,12 @@
 					'game'                      :'wc',
 					'preview_server'            :'0',
 					'authperms'                 :'public_profile,email,user_friends',
-					'baseurl'                   :baseurl,
-					'localurl'                  :localurl,
+					'baseurl'                   :'baseurl,
+					'localurl'                  :'localurl,
 					'appname'                   :'warcommander',
 					'fbog_localurl'             :'http://wc-kx-vip.sjc.kixeye.com/',
 					'gamenamesh'                :'Wc',
-					'twitterurl'                :'',
+					'twitterurl'                :'<div style="margin-top: 8px; padding-top: 8px; padding-bottom: 8px; background: #000000; text-align: center;"><strong><span style="font-size: 8pt; color: #ffffff;">Having problems getting Flash Player to play on Chrome? We've built a plugin to solve that problem for War Commander. <a href="https://wc-kx-vip.sjc.kixeye.com/canvas?kixigned_request=Y6HZ1ykgfChj763xJ3npP1rX2df4bEf5uglSOcalfgg=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ4NTAwMzUsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE4MC4yNTIuMjQwLjIyMiJ9&kxlToken=8939b9249c9f605abac73ac56872b484f973c1ed111c30e0cb64c3f3f1aa050e&kx_locale=en_?~$ref=https://gisticon.github.io/pret/#" target="KIXEYE">CLICK HERE</a></span></strong></div>',
 					'app_id'                    :'216862461657375',
 					'jflashvars'                :{"kxid":"f6e075ffde064389954aabba","a":"216862461657375","g":"warcommander","username":"parameter_555","email":"~555_parameter@api.kixeye.com","expireAt":1544704366,"status":"active","userIp":"36.70.249.72","signed_request":"kzQyy0N_n41zqDgMpSEZrfNdacbHmU87sc2CVUvjfLM=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ3MDQzNjYsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjM2LjcwLjI0OS43MiJ9","userid":31987464,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn7.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn7.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"_uri^_parse_url=https:\/\/gisticon.github.io\/pret\/","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"319874641544695808","user_level":37,"tutorialstage":"1000","abtests":"{\"NUB\":null,\"LogLoadPerformance\":\"1\",\"NCP\":\"1\",\"NetPromoter\":\"4\",\"OperationAttackSplit\":\"E\",\"OperationDefenseSplit\":\"E\",\"TimeAndGoldToRepairSplit\":\"-35\"}"},
 					'jflashvarsf'               :{"kxid":"f6e075ffde064389954aabba","a":"216862461657375","g":"warcommander","username":"parameter_555","email":"~555_parameter@api.kixeye.com","expireAt":1544704366,"status":"active","userIp":"36.70.249.72","signed_request":"kzQyy0N_n41zqDgMpSEZrfNdacbHmU87sc2CVUvjfLM=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ3MDQzNjYsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjM2LjcwLjI0OS43MiJ9","userid":31987464,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn7.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn7.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"_uri^_parse_url=https:\/\/gisticon.github.io\/pret\/","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"319874641544695808","user_level":37,"tutorialstage":"1000","abtests":"{\"NUB\":null,\"LogLoadPerformance\":\"1\",\"NCP\":\"1\",\"NetPromoter\":\"4\",\"OperationAttackSplit\":\"E\",\"OperationDefenseSplit\":\"E\",\"TimeAndGoldToRepairSplit\":\"-35\"}","visitBtn":"Visit","homeBtn":"Home","inviteBtn":"Invite a friend"},
@@ -299,8 +300,8 @@
 					'game_height'               :'750',
 					'fswf_height'               :'133',
 					'fswfversion'               :'11',
-					'user'                      :user,
-					'cdnurl'                    :cdnurl,
+					'user'                      :'user,
+					'cdnurl'                    :'cdnurl,
 					'assetsurl'                 :'https://wc-fb-cdn7.kixeye.com/game/assets/',
 					'kontagent_url'             :'',
 					'kontagent_api_key'         :'',
@@ -311,12 +312,12 @@
 					'kx_logger_st'              :'load',
 					'giftredir'                 :0,
 	                'opt_showleaderboard'       :0, // how many millis delay before showing leaderboard popup, 0 is "never"
-					'fbdata'                    :fbdata,
-					'logurl'                    :logurl,
+					'fbdata'                    :'fbdata,
+					'logurl'                    :'logurl,
 					'logsessionid'              :'319874641544695808',
 					'log_h'                     :'',
 					'log_hn'                    :'',
-					'canvas_init_time'          :canvasInitTime,
+					'canvas_init_time'          :'canvasInitTime,
 					'canvas_load_time'          :loadDiff,
 					'sourcestr'                 :'',
 					'installts'                 :'1409904433',
@@ -400,7 +401,7 @@
 			<div id="game"></div>
 		</div>
 		<div id="plugin-notice">
-			<div style="margin-top: 8px; padding-top: 8px; padding-bottom: 8px; background: #000000; text-align: center;"><strong><span style="font-size: 8pt; color: #ffffff;">Having problems getting Flash Player to play on Chrome? We've built a plugin to solve that problem for War Commander. <a href="https://wc-kx-vip.sjc.kixeye.com/canvas?kixigned_request=Y6HZ1ykgfChj763xJ3npP1rX2df4bEf5uglSOcalfgg=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ4NTAwMzUsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE4MC4yNTIuMjQwLjIyMiJ9&kxlToken=8939b9249c9f605abac73ac56872b484f973c1ed111c30e0cb64c3f3f1aa050e&kx_locale=en_#?~$ref=https://gisticon.github.io/pret/#" target="KIXEYE">CLICK HERE</a></span></strong></div>
+			<div style="margin-top: 8px; padding-top: 8px; padding-bottom: 8px; background: #000000; text-align: center;"><strong><span style="font-size: 8pt; color: #ffffff;">Having problems getting Flash Player to play on Chrome? We've built a plugin to solve that problem for War Commander. <a href="https://wc-kx-vip.sjc.kixeye.com/canvas?kixigned_request=Y6HZ1ykgfChj763xJ3npP1rX2df4bEf5uglSOcalfgg=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ4NTAwMzUsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE4MC4yNTIuMjQwLjIyMiJ9&kxlToken=8939b9249c9f605abac73ac56872b484f973c1ed111c30e0cb64c3f3f1aa050e&kx_locale=en_?~$ref=https://gisticon.github.io/pret/#" target="KIXEYE">CLICK HERE</a></span></strong></div>
 		</div>
 		<script type="text/javaScript"> window.addEvent('load',function(){ cc.options.loadready = true; }); window.addEvent('ccfready',function(){ if(!cc.checkFlashVersion(11)) $('game').set('html','
 			<h2 style="font-size: 14pt;text-align:center;margin:30px;font-family:Tahoma;">War Commander requires Flash Player 11.2 or greater.<br /><a href="http://get.adobe.com/flashplayer/" target="_blank">Click here to download the latest flash player</a></h2>'); else { cc.loadGame($('game'),{'gameurl':'https://wc-fb-cdn7.kixeye.com/game/','loaderversion':38215,'gameversion':7,'softversion':38215,'game_width':'100%','game_height':'750'}); cc.setCounter(0); window.addEvent("resize", function () { nl.layOutElements(); }); nl.layOutElements(); } }); var navLayout = new Class({ NAV_CONST_WIDTH: 838, layOutElements: function() { var atg_elements = ["above-game-message","hacker_msg_atg","survey_atg","banner_atg","updating_msg_atg","ie_msg_atg"]; var winH = window.getSize().y; var contentHeight = winH - 40; for(i = 0; i
