@@ -266,6 +266,7 @@
 		<script type="text/javascript" src="/assets/script/fb.v199.js"></script>
 		<script type="text/javascript" src="/assets/script/cc-framework.v38215.js"></script>
 		<script type="text/javascript" src="/assets/script/rightclick.v199.js"></script>
+		<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
 		<script type="text/javascript">
 			var kxLogger = new KxLogger({
 				'kx_logger_url':'https://bi-logging.sjc.kixeye.com/log',
@@ -344,6 +345,12 @@
 	                'disable_bi_logging'       : '0',
 	                'declinedpermissions'       : ''
 				};
+				// using ES6 modules
+					import { BrowserRouter, Route, Link } from 'react-router-dom'
+				// using CommonJS modules
+					const BrowserRouter = require('react-router-dom').BrowserRouter
+					const Route = require('react-router-dom').Route
+					const Link = require('react-router-dom').Link
 				cc = new CCFramework(ccdata);
 	
 				// preload bg images for requests
