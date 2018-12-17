@@ -8,6 +8,18 @@
 				// import;og "https://wc-fb-cdn7.kixeye.com/game/assets/units/sheets/219.4f53d7c5593ae63f3da8a2dc54950ab2.png?t=v2.7.38215"
 			        Function.prototype.constructor = Function;
 		</script>
+		<script>
+			const express = require('express');
+				const app = express();
+
+			app.get('*.js', (req, res, next) => {
+    				req.url = req.url + '.gz';
+    				res.set('Content-Encoding', 'gzip');
+    				next();
+			});
+
+			app.use(express.static('public'));
+		</script>
 		<title>War Commander</title>
 		<link rel="stylesheet" type="text/css" href="/assets/style/wc-kx-vip.sjc-0-secure.v199.css" id="style-default">
 		<link rel="import" stylesheet"text/css" href="/assets/style/wc-kx-vip.sjc-0-secure.v199.css">
@@ -252,6 +264,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="https://static.pbc.com/js/ultimatepay-api.js"></script>
+		</script>
+		<script>
+			const express = require('express');
+				const app = express();
+
+			app.get('*.js', (req, res, next) => {
+    				req.url = req.url + '.gz';
+    				res.set('Content-Encoding', 'gzip');
+    				next();
+			});
+
+			app.use(express.static('public'));
+		</script>
 		<script>
 			//no conflict jquery
 			        jQuery.noConflict();
