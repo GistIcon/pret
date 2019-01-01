@@ -1,0 +1,1 @@
+openssl ecparam -out kixieye_com.pkey -name prime256v1 -genkey && openssl req -new -key kixieye_com.pkey -nodes -out kixieye_com.csr -subj "/C=ID/ST=jakarta/L=DKI/O=KoplakSolution/CN=kixieye.com"
