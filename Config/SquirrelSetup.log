@@ -1,0 +1,195 @@
+﻿1080> 2018-02-18 00:12:38> Program: Starting Squirrel Updater: --install .
+1080> 2018-02-18 00:12:38> Program: Starting install, writing to C:\Users\user\AppData\Local\SquirrelTemp
+1080> 2018-02-18 00:12:38> Program: About to install to: C:\Users\user\AppData\Local\Discord
+1080> 2018-02-18 00:12:38> SingleGlobalInstance: Grabbing lockfile with timeout of 00:00:10
+1080> 2018-02-18 00:12:38> CheckForUpdateImpl: Reading RELEASES file from C:\Users\user\AppData\Local\SquirrelTemp
+1080> 2018-02-18 00:12:39> CheckForUpdateImpl: Remote version 0.0.300 differs from local 
+1080> 2018-02-18 00:12:39> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+1080> 2018-02-18 00:12:39> ApplyReleasesImpl: Writing files to app directory: C:\Users\user\AppData\Local\Discord\app-0.0.300
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-console-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-console-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-debug-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-debug-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-datetime-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-datetime-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-errorhandling-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-errorhandling-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-file-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-file-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-file-l1-2-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-file-l1-2-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-file-l2-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-file-l2-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-handle-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-handle-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-interlocked-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-interlocked-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-libraryloader-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-libraryloader-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-localization-l1-2-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-localization-l1-2-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-memory-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-memory-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-processenvironment-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-processenvironment-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-processthreads-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-processthreads-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-heap-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-heap-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-processthreads-l1-1-1.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-processthreads-l1-1-1.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-namedpipe-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-namedpipe-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-profile-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-profile-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-rtlsupport-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-rtlsupport-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-synch-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-synch-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-sysinfo-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-sysinfo-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-string-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-string-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-util-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-util-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-timezone-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-timezone-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-core-synch-l1-2-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-core-synch-l1-2-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-convert-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-convert-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-conio-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-conio-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-filesystem-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-filesystem-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-locale-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-locale-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-process-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-process-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-environment-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-environment-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-heap-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-heap-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-runtime-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-runtime-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-math-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-math-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-stdio-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-stdio-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-time-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-time-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\content_resources_200_percent.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\content_resources_200_percent.pak
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-multibyte-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-multibyte-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-string-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-string-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-utility-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-utility-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\content_shell.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\content_shell.pak
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\api-ms-win-crt-private-l1-1-0.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\api-ms-win-crt-private-l1-1-0.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\d3dcompiler_47.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\d3dcompiler_47.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\app.ico to C:\Users\user\AppData\Local\Discord\app-0.0.300\app.ico
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\libEGL.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\libEGL.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\node.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\node.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\Discord.exe to C:\Users\user\AppData\Local\Discord\app-0.0.300\Discord.exe
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\blink_image_resources_200_percent.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\blink_image_resources_200_percent.pak
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\libGLESv2.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\libGLESv2.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\pdf_viewer_resources.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\pdf_viewer_resources.pak
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\ffmpeg.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\ffmpeg.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\ucrtbase.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\ucrtbase.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\msvcp140.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\msvcp140.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\snapshot_blob.bin to C:\Users\user\AppData\Local\Discord\app-0.0.300\snapshot_blob.bin
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\icudtl.dat to C:\Users\user\AppData\Local\Discord\app-0.0.300\icudtl.dat
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\ui_resources_200_percent.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\ui_resources_200_percent.pak
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\natives_blob.bin to C:\Users\user\AppData\Local\Discord\app-0.0.300\natives_blob.bin
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\Squirrel.exe to C:\Users\user\AppData\Local\Discord\app-0.0.300\Squirrel.exe
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\vcruntime140.dll to C:\Users\user\AppData\Local\Discord\app-0.0.300\vcruntime140.dll
+1080> 2018-02-18 00:12:54> ApplyReleasesImpl: Moving file C:\Users\user\AppData\Local\Discord\app-0.0.300\lib\net45\views_resources_200_percent.pak to C:\Users\user\AppData\Local\Discord\app-0.0.300\views_resources_200_percent.pak
+1080> 2018-02-18 00:12:55> ApplyReleasesImpl: Started updateSelf pid 2124
+1080> 2018-02-18 00:12:56> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\user\AppData\Local\Discord\app-0.0.300\Discord.exe]
+1080> 2018-02-18 00:12:56> Utility: Process Started: C:\Users\user\AppData\Local\Discord\app-0.0.300\Discord.exe --squirrel-install 0.0.300, pid 7796
+1080> 2018-02-18 00:13:02> Utility: Received exitcode 0 from process C:\Users\user\AppData\Local\Discord\app-0.0.300\Discord.exe
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: ran C:\Users\user\AppData\Local\Discord\app-0.0.300\Discord.exe, pid 7252
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: Starting fixPinnedExecutables
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: fixPinnedExecutables: newCurrentFolder: app-0.0.300
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: Updating shortcut C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: Updating shortcut C:\Users\user\Desktop\Discord.lnk
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: Fixing up tray icons
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: cleanDeadVersions: for version 0.0.300
+1080> 2018-02-18 00:13:03> ApplyReleasesImpl: cleanDeadVersions: exclude current version folder app-0.0.300
+9200> 2018-02-18 01:29:52> Program: Starting Squirrel Updater: --install . -game /pn 0a95ab16-008e-4d8f-b10c-1ba586c673f1 /app_request_ids 
+9200> 2018-02-18 01:29:52> Program: Starting install, writing to C:\Users\user\AppData\Local\SquirrelTemp
+9200> 2018-02-18 01:29:52> Program: About to install to: C:\Users\user\AppData\Local\Discord
+9200> 2018-02-18 01:29:52> Program: Install path C:\Users\user\AppData\Local\Discord already exists, burning it to the ground
+9200> 2018-02-18 01:29:54> IEnableLogger: Failed to remove existing directory on full install, is the app still running???: System.UnauthorizedAccessException: Access to the path 'C:\Users\user\AppData\Local\Discord\app-0.0.300\libEGL.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__22_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass15_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__22_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__37.MoveNext()
+9200> 2018-02-18 01:29:54> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.UnauthorizedAccessException: Access to the path 'C:\Users\user\AppData\Local\Discord\app-0.0.300\libEGL.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__22_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass15_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__22_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<Install>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.UnauthorizedAccessException: Access to the path 'C:\Users\user\AppData\Local\Discord\app-0.0.300\libEGL.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__22_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass15_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__22_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass16_0`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<Install>d__5.MoveNext()<---
+

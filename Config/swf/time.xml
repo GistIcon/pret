@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swf path="SectorGoals_mission_progress.swf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../uicontract.xsd">
+	<container path="SectorGoals.progress">
+		<text path="TXT_progresstitle" lockey="sector_goals_header__sector_goals_progress_title" name="headerText"/>
+		<movieclip path="MC_progressBar" name="progressBar"/>
+	</container>
+	
+	<container path="SectorGoals.timer">
+		<text path="TXT_header" lockey="sector_goals_header__sector_goals_progress_title" name="headerText"/>
+		<text path="TXT_timer" lockey="sector_goals_header__sector_goals_progress_timer" name="timerText"/>
+		<text path="BTN_confirm.TXT_label" lockey="sector_goals_header__sector_goals_header_confirm_button" name="bodyText"/>
+		<button path="BTN_confirm" onClick="Close" name="confirmButton"/>
+	</container>
+</swf>

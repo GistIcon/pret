@@ -1,0 +1,32 @@
+/**
+ * In fact, you're looking at ACE right now. Go ahead and play with it!
+ *
+ * We are currently showing off the JavaScript mode. ACE has support for 45
+ * language modes and 24 color themes!
+ */
+
+/**
+ * In fact, you're looking at ACE right now. Go ahead and play with it!
+ *
+ * We are currently showing off the JavaScript mode. ACE has support for 45
+ * language modes and 24 color themes!
+ */
+
+function add(x, y) {
+    var resultString = "Hello, ACE! The result of your math is: ";
+    var result = x + y;
+    return resultString + result;
+}
+
+var addResult = add(3, 2);
+console.log(addResult);
+
+function add(x, y) {
+    var resultString = "Hello, ACE! The result of your math is: ";
+    var result = x + y;
+    return resultString + result;
+}
+
+var addResult = add(3, 2);
+console.log(addResult);
+"{\t\r\n[\r\n0:{\r\n\"name\":\"DNT\"\r\n\"value\":\"1\"\r\n}\r\n1:{\r\n\"name\":\"Accept-Encoding\"\r\n\"value\":\"identity;q=1, *;q=0\"\r\n}\r\n2:{\r\n\"name\":\"User-Agent\"\r\n\"value\":\"Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Ge ...\"\r\n}\r\n3:{\r\n\"name\":\"Accept\"\r\n\"value\":\"*/*\"\r\n}\r\n4:{...}\r\n5:{\r\n\"name\":\"Accept-Language\"\r\n\"value\":\"en-US,en;q=0.9\"\r\n}\r\n]}"
