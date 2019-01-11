@@ -370,6 +370,24 @@
 	</head>
 
 	<body id="body">
+		<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '276214576387842',
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 		<a href="https://my.ibvpn.com/aff.php?aff=8691"><img src="https://www.ibvpn.com/img/banners/728x90banner-multi.jpg" width="728" height="90" border="0"></a>
 
 
