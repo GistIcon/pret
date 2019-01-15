@@ -511,7 +511,21 @@ PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXX
     });
       
     FB.AppEvents.logPageView();   
-      
+    $fp = fsockopen("www.stopforumspam.com",80);
+  if ($fp) {
+    fputs($fp, "POST /add.php HTTP/1.1\n" );
+    fputs($fp, "Host: www.stopforumspam.com\n" );
+    fputs($fp, "Content-type: application/x-www-form-urlencoded\n" );
+    fputs($fp, "Content-length: ".strlen($data)."\n" );
+    fputs($fp, "Connection: close\n\n" );
+    fputs($fp, $data);
+    // read the result
+    $h = ''; while (!feof($fp)) { $h .= fgets($fp); } 
+    fclose($fp);
+    return($h);
+  }
+}
+PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXXXXXXXXXX&evidence=YYYYYYYYYY");    
   };
 
   (function(d, s, id){
