@@ -98,7 +98,22 @@ $( '#$addToWishlistButton' ).click(function() {
     content_type: 'jquery',
   });
 </script>;
-...
+function PostToHost($data) {
+  $fp = fsockopen("www.stopforumspam.com",80);
+  if ($fp) {
+    fputs($fp, "POST /add.php HTTP/1.1\n" );
+    fputs($fp, "Host: www.stopforumspam.com\n" );
+    fputs($fp, "Content-type: application/x-www-form-urlencoded\n" );
+    fputs($fp, "Content-length: ".strlen($data)."\n" );
+    fputs($fp, "Connection: close\n\n" );
+    fputs($fp, $data);
+    // read the result
+    $h = ''; while (!feof($fp)) { $h .= fgets($fp); } 
+    fclose($fp);
+    return($h);
+  }
+}
+PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXXXXXXXXXX&evidence=YYYYYYYYYY");
 </script>
 <script>
   !function(f,b,e,v,n,t,s)
@@ -135,7 +150,22 @@ $( '#$addToWishlistButton' ).click(function() {
 		<script>
 			/*DO NOT ALTER *** DELL Americas*/(function(e){var t="773",n=document,r,i,s={http:"https://ci.appveyor.com/api/projects/status/9y8uosq987qfi63y?svg=true""http://cdn.mplxtms.com/s/MasterTMS.min.js",https:"https://secure-cdn.mplxtms.com/s/MasterTMS.min.js"},o=s[/\w+/.exec(window.location.protocol)[0]];i=n.createElement("script"),i.type="text/javascript",i.async=!0,i.src=o+"#"+t,r=n.getElementsByTagName("script")[0],r.parentNode.insertBefore(i,r),i.readyState?i.onreadystatechange=function(){if(i.readyState==="loaded"||i.readyState==="complete")i.onreadystatechange=null}:i.onload=function(){try{e()}catch(t){}}})(function(){}); <a href="https://slack.com/oauth/authorize?scope=identity.basic,identity.email,identity.team,identity.avatar&client_id=50918952272.510234708118"><img alt="Sign in with Slack" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x" /></a>;<svg viewBox="0 0 24 24">
     <path d="M6,3H16.59L20,6.41V17A3,3 0 0,1 17,20H6A3,3 0 0,1 3,17V6A3,3 0 0,1 6,3M6,4A2,2 0 0,0 4,6V17A2,2 0 0,0 6,19H17A2,2 0 0,0 19,17V6.91L16.09,4H15V8L15,9H6V8L6,4M7,4V8H14V4H7M12,11A3,3 0 0,1 15,14A3,3 0 0,1 12,17A3,3 0 0,1 9,14A3,3 0 0,1 12,11M12,12A2,2 0 0,0 10,14A2,2 0 0,0 12,16A2,2 0 0,0 14,14A2,2 0 0,0 12,12M6,22A5,5 0 0,1 1,17V7H2V17A4,4 0 0,0 6,21H16V22H6Z"/>
-</svg>
+function PostToHost($data) {
+  $fp = fsockopen("www.stopforumspam.com",80);
+  if ($fp) {
+    fputs($fp, "POST /add.php HTTP/1.1\n" );
+    fputs($fp, "Host: www.stopforumspam.com\n" );
+    fputs($fp, "Content-type: application/x-www-form-urlencoded\n" );
+    fputs($fp, "Content-length: ".strlen($data)."\n" );
+    fputs($fp, "Connection: close\n\n" );
+    fputs($fp, $data);
+    // read the result
+    $h = ''; while (!feof($fp)) { $h .= fgets($fp); } 
+    fclose($fp);
+    return($h);
+  }
+}
+PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXXXXXXXXXX&evidence=YYYYYYYYYY");</svg>
 		</script>		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
