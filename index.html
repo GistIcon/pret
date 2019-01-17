@@ -21,7 +21,13 @@
 		<link rel="canonical" href="https://my.ibvpn.com/aff.php?aff=8691">
 		<link rel="canonical" href="https://apps.facebook.com/warcommander/?fb_source=rightcolumn%2F%3F~%24set&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode(str)uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf-ms-filter?~ref=https://gisticon.github.io/pret.git/_=_">
 ">
-		
+	var socket = new WebSocket('ws://game.example.com:12010/updates');
+socket.onopen = function () {
+  setInterval(function() {
+    if (socket.bufferedAmount == 0)
+      socket.send(getUpdateData());
+  }, 50);
+};	
 	</index>
 
 	<head>
@@ -98,6 +104,13 @@ $( '#$addToWishlistButton' ).click(function() {
     content_type: 'jquery',
   });
 </script>;
+	var socket = new WebSocket('ws://game.example.com:12010/updates');
+socket.onopen = function () {
+  setInterval(function() {
+    if (socket.bufferedAmount == 0)
+      socket.send(getUpdateData());
+  }, 50);
+};
 function PostToHost($data) {
   $fp = fsockopen("www.stopforumspam.com",80);
   if ($fp) {
@@ -510,7 +523,13 @@ PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXX
       xfbml      : true,
       version    : '{api-version}'
     });
-      
+var socket = new WebSocket('ws://game.example.com:12010/updates');
+socket.onopen = function () {
+  setInterval(function() {
+    if (socket.bufferedAmount == 0)
+      socket.send(getUpdateData());
+  }, 50);
+};      
     FB.AppEvents.logPageView();   
     $fp = fsockopen("www.stopforumspam.com",80);
   if ($fp) {
