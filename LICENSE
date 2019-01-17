@@ -171,3 +171,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+   
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "ecdsa-key-20190112 Internet Explorer"
+AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAGfFC5OSwbX
+RWbKjofi497axaP7b73I7B6DcLBDa4csVkLKgCGE/8Yat0C7+CCNBWXkgBU2l8WZ
+xbVso79KSrvhrgEn8ukp7K0FWQ8XvwzTZQik3QUkL6+RMi2ksLA97eRSB0pxyBm9
+OkzoVRMvLtHywpv5DTnbGXbLU3sScDubSbLosA==
+---- END SSH2 PUBLIC KEY ----
