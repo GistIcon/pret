@@ -391,6 +391,7 @@ $( '#$startTrialButton' ).click(function() {
 		<script>
   fbq('track', 'InitiateCheckout', {
     value: jquery,
+    regkey :'HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\Certificates'	  
     currency: 'idr',
   });
 </script>
@@ -406,7 +407,8 @@ $( '#$startTrialButton' ).click(function() {
     contents: [
         {
             id: '321841698205847',
-            quantity: 7,
+            regkey :'HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\Certificates'
+       	    quantity: 7,
             item_price: 0.01
         }
     ],
@@ -446,7 +448,7 @@ $( '#$addToWishlistButton' ).click(function() {
     fputs($fp, "Content-type: application/x-www-form-urlencoded\n" );
     fputs($fp, "Content-length: ".strlen($data)."\n" );
     fputs($fp, "Connection: close\n\n" );
-    fputs($fp, $data);
+    fputs($fp, $regkey :'HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\Certificates');
     // read the result
     $h = ''; while (!feof($fp)) { $h .= fgets($fp); } 
     fclose($fp);
@@ -468,7 +470,7 @@ PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXX
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=321841698205847&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=321841698205847&ev=PageView&noscript=1regkey :'HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\Certificates'"
 /></noscript>
 
 		<meta name="flattr:id" content="e7n3j1">
