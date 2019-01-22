@@ -1,4 +1,4 @@
-Add-AppvClientConnectionGroup
+Add-AppvClientConnectionGroupparameter path:pret/index.html
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
