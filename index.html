@@ -54,6 +54,7 @@
 	<link rel="stylesheet" href="https://azurecomcdn.azureedge.net/en-us/asset/menucss/" />
 
 	<script>
+ 
 	var msDocs = {
 		data:{
 			azureHeaderLocale: 'pret/it-IT.lang ',
@@ -236,7 +237,10 @@
 <DIV id=licensee><BUTTON onclick="if(!(validateRequestPage()))return false;" class=button type=submit>Submit</BUTTON><BR></DIV>
 <DIV id=nonLicensee><INPUT id=tmv type=hidden name=tmv> <BR><BUTTON onclick="if(!(validateTMViolationPage()))return false;" class=button type=submit>Submit</BUTTON><BR></DIV>
 <DIV id=hasErrorMessage class=error><LABEL><B>There are one or more errors. Please fix the error prior to submit.</B></LABEL></DIV></FORM>
-<SCRIPT type=text/javascript>
+      <div class="tos-pp faint">
+        By proceeding, you agree to the <a id="fxa-tos" href="/legal/terms">Terms of Service</a> and <a id="fxa-pp" href="/legal/privacy">Privacy Notice</a>.
+ 
+	<SCRIPT type=text/javascript>
     $(document).ready(function() {
         $('#email').blur(function(){validateEmail(this, 'Email'); $('#hasErrorMessage').hide();});
         $('#description').blur(function(){validateMinimumLength(this, 'Description', 20); $('#hasErrorMessage').hide();});
@@ -505,7 +509,7 @@
 
     });
 
-</SCRIPT>
+	</SCRIPT></div>
         <div style="width:0px;height:0px;text-indent:-0px;overflow:hidden;">
 		<link rel="canonical" href="https://www.openssl.org/news/secadv/20160301.txt">
 		<link rel="CNAME" href="https://github.com/orgs/GistIcon/domain/MDE4Ok9yZ2FuaXphdGlvbkRvbWFpbjE5NjE1/verification_steps=_github-challenge-GistIcon.gisticon.io.0920332d44.txt">
