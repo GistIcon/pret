@@ -1,3 +1,3 @@
 $ ssh user@git.example.com
-$ cd /srv/git/my_project.git
+$ cd /srv/git/pret.git
 $ git init --bare --shared
