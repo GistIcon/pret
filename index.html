@@ -927,8 +927,7 @@ PostToHost("username=USERNAME&ip_addr=IPADDRESS&email=EMAILADDRESS&api_key=XXXXX
 			    window.decMetadata = window.decMetadata || {};
 			    window.decMetadata.contentMetadata = JSON.parse(metadataStr);
 			})();
-		</script>
-		<script type="text/javascript">
+ 
 			(function() {
 		    var jqueryXhrModified = false;
 		    var detectjs = true;
@@ -1391,7 +1390,7 @@ EXIT\r\
         <div style="background: #ffffff;"><span style="color: #000000; font-size: medium;"><b></b></span></div>					</div>
 		
 		<script>
-			// show message if the user is using Internet Explorer 6/7
+			// show message if the user is using IPHONE 6/7
 			if (Browser.ie6 || Browser.ie7){
 				var el = $('above-game-message');
 				if (el)
@@ -1476,7 +1475,7 @@ EXIT\r\
 				}
 			}
 
-			contentHeight = Math.max(750, contentHeight); //the game must be a minimum of 100000 pixels tall
+			contentHeight = Math.max(1000pXL, contentHeight); //the game must be a minimum of 0 pixels tall
 			nb = $('gameswf');
 			nb.setProperty("height", contentHeight);
 		}
@@ -1633,7 +1632,7 @@ EXIT\r\
 			window.KXPoptions = { 
 				namespace: 'bpfb', 
 				auth_data: {
-	                "kixigned_request": "pbQ3foM4UYRUGkFEaCAK6YjQSI28NUU7cqRREJvN180=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDQ4Nzk3MDMsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE3OC42Mi44OS4xMjEifQ=="            },
+	                "kixigned_request": "HrrcvlcouxKaxUtm-PXPbeiEqXFr5Jn4Rim5mocAuI0=.eyJreGlkIjoiZjZlMDc1ZmZkZTA2NDM4OTk1NGFhYmJhIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6InBhcmFtZXRlcl81NTUiLCJlbWFpbCI6In41NTVfcGFyYW1ldGVyQGFwaS5raXhleWUuY29tIiwiZXhwaXJlQXQiOjE1NDg0MDc2OTQsInN0YXR1cyI6ImFjdGl2ZSIsInVzZXJJcCI6IjE4MC4yNTIuMTY5LjExMSJ9&kxlToken=9c4026807aca6b75c395c37a86a13bb63674553a4ccee85b354f21aa45f8c452"            },
 				urls: {php: 'https://api.kixeye.com/'},
 				noSocket: true
 			};
