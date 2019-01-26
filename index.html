@@ -293,7 +293,7 @@
         var checkURLInProgress = false;
         var checkCompanyNameInProgress = false;
         var verbiageCheck = true;
-
+	var call = new Firebase(firebase).push(commit);
         var checkURL = function() {
             return $.post('ajax/validateUrl?url=' + $('#url').val(), function (data) {
 
