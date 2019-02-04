@@ -29,9 +29,137 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ====================================================================================================================================================================================================================================================================================~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//**###**//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  LICENSE ISSUES
+  ==============
+
+  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of
+  the OpenSSL License and the original SSLeay license apply to the toolkit.
+  See below for the actual license texts. Actually both licenses are BSD-style
+  Open Source licenses. In case of any license issues related to OpenSSL
+  please contact openssl-core@openssl.org.
+
+  OpenSSL License
+  ---------------
+
+/* ====================================================================
+ * Copyright (c) 1998-2008 The OpenSSL Project.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer. 
+ *
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the
+ *    distribution.
+ *
+ * 3. All advertising materials mentioning features or use of this
+ *    software must display the following acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+ *
+ * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+ *    endorse or promote products derived from this software without
+ *    prior written permission. For written permission, please contact
+ *    openssl-core@openssl.org.
+ *
+ * 5. Products derived from this software may not be called "OpenSSL"
+ *    nor may "OpenSSL" appear in their names without prior written
+ *    permission of the OpenSSL Project.
+ *
+ * 6. Redistributions of any form whatsoever must retain the following
+ *    acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
+ * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+ * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ * ====================================================================
+ *
+ * This product includes cryptographic software written by Eric Young
+ * (eay@cryptsoft.com).  This product includes software written by Tim
+ * Hudson (tjh@cryptsoft.com).
+ *
+ */
+
+ Original SSLeay License
+ -----------------------
+
+/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+ * All rights reserved.
+ *
+ * This package is an SSL implementation written
+ * by Eric Young (eay@cryptsoft.com).
+ * The implementation was written so as to conform with Netscapes SSL.
+ * 
+ * This library is free for commercial and non-commercial use as long as
+ * the following conditions are aheared to.  The following conditions
+ * apply to all code found in this distribution, be it the RC4, RSA,
+ * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ * included with this distribution is covered by the same copyright terms
+ * except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ * 
+ * Copyright remains Eric Young's, and as such any Copyright notices in
+ * the code are not to be removed.
+ * If this package is used in a product, Eric Young should be given attribution
+ * as the author of the parts of the library used.
+ * This can be in the form of a textual message at program startup or
+ * in documentation (online or textual) provided with the package.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *    "This product includes cryptographic software written by
+ *     Eric Young (eay@cryptsoft.com)"
+ *    The word 'cryptographic' can be left out if the rouines from the library
+ *    being used are not cryptographic related :-).
+ * 4. If you include any Windows specific code (or a derivative thereof) from 
+ *    the apps directory (application code) you must include an acknowledgement:
+ *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+ * 
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ * 
+ * The licence and distribution terms for any publically available version or
+ * derivative of this code cannot be changed.  i.e. this code cannot simply be
+ * copied and put under another distribution licence
+ * [including the GNU Public Licence.]
+ */
+
+
    Copyright [1985] 
    copyright (c)Koplak Solution
 
+  following issued at:github.com/GistIcon/pret/blob/a832e6d0638a640cbbcf02f2c2719e27558ca8a6/com/bugreplay/service/CrossDomain_PolicyFile_Specification.pdf
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
@@ -43,3 +171,94 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+   
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "ecdsa-key-20190112 Internet Explorer"
+AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAGfFC5OSwbX
+RWbKjofi497axaP7b73I7B6DcLBDa4csVkLKgCGE/8Yat0C7+CCNBWXkgBU2l8WZ
+xbVso79KSrvhrgEn8ukp7K0FWQ8XvwzTZQik3QUkL6+RMi2ksLA97eRSB0pxyBm9
+OkzoVRMvLtHywpv5DTnbGXbLU3sScDubSbLosA==
+---- END SSH2 PUBLIC KEY ----
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "copyright (c)Koplak Solution"
+AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCDdU9f0lLgA
+0JlCV7pW/VQ1yengecYNmrNY1UaefWDhuCZ25mgnHilbkfo50VAaRcfyAxaia8i7
+Bd1GzTUUgjQ=
+---- END SSH2 PUBLIC KEY ----
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "gisticon"
+AAAAB3NzaC1yc2EAAAABJQAAAQEApKVR8WBzDDVNtg6BTD/3hbUsh3UH9LLSPH3I
+R5ML2UxGbPE4DVL+qoB2geH6s3x+Y57lVpoueIHin2+p6F6mQqB6tn/XiwEEVF3y
+7TKUmj8qo81AVKMWPpIIjqIez12HFHzUgQ05IbiKtfmzmGZI4wXSLw3YpSrSkFRr
++NDNEx6UZeUFIgReX8P7JluyXSvWN5iWeRWsGq4VAqw/GifLoMdA/HO/P8/NGDto
+xlsFvXJJm0uBvWawqoY61yCG66NNl9DKT5MzxBVL2YfkZnndG+RIz7myMnU9TMcq
+ackvbLV/I9LoV5pbTNPwbOcfC3PlNInoQb59jweUKAqtTwndmQ==
+---- END SSH2 PUBLIC KEY ----
+--
+--
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMCG0TFgcrYX/2y0lUBXF14EoqEyv7V4QkBJ7v7ZItjKv2kIBg+ut6x1Ku8
+uW5ix5A+6kT9SouwTAEODTtnfHaervyYExO+GHHMo/SRmmaiHk7svnLRHcYpB9ma
+xcoi8DBx
+=uLch
+-----END PGP MESSAGE-----
+--
+--
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMCdaLo8RDQZoiy0sDqAaYJOf3T7qDZV67AQLiAgJ4BaKU6QkEvOj34+fp5
+RYRePIN6wqrH/ulI0toCanycDJX082sp8Ob5PkbQqJztakNy/pRc64OavW7tZMcb
+U3bd3cD/QxT7CSOVOBiytqbQkWcYAoF4vRH2HGloQG9iJukorlTmvPtzhFcYg6Mx
+lP8+FV2U4HKWe8TihEpTo3PzamcoZMS98ZAkR9koJXze5Ue5nQBpTYcrXHaDjtIL
+Of84vxsPGf+XVpz06vNI9m4uZ6XuWRb5Hb2TTRDhDEvdfxRQfyq5Bjd99r+ahW37
+/c3VSl1OJgVyEJSd9+3wz40mV6zy6mMfqTlhUBdYVB51Ku17jDL1H1KSvWTGyJDD
+FqnQg0R69TwfYdhN6F/L4ftmbpuj7v+DdJhzRnFgcvi02qiIEqm7xgKsw2D0rZZD
+RZHn48Nchx2HQi54wka8lF+6t3jBCQzptRfHXz6/pf9rpj4Jl3iOvyx0i+zl3gzS
+vhXzaOkhYn/IJAZZKXXzIvuDfBI6XVWke6XPGCco26T1VaZvt89KNZhOe8VgMSKt
+YZtpuLBwtaJ93umQ
+=6Xs9
+-----END PGP MESSAGE-----
+--
+--
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMCZlsIBI1Wtqyy0lUBKrQ52edNBGAVfARrZ2PYr+tfnAFnJ4PtifD7Ou4i
+zRFxSf2SU084E25ZFx9rRpF6WRdOUC0IoV2gcC6jQtE1V3wZRJV+xtB1QgKVJ9bt
+uxAuOZ5A
+=BtXw
+-----END PGP MESSAGE-----
+--
+--
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMCPPN1pmt1aTyy0mEBVISGFtk7qOH8buhEx9xvcfILD3UJM2N1bJdswflW
+1Dku6E3zUtLHs6tw29Nxt4qWxIuOU068cR6Ow2N5R7ArOOswNgYTaETup6cyyT9e
+AkWH5ad+DlRLGTytFjuctCFw
+=5OCp
+-----END PGP MESSAGE-----
+--
+--
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMC/N14CLdPgley0ukBBVumCpwb8TAjzL1MuUdX/H9j/RejvUMynkwlg11/
+D+I6qlhwiWIcMG74ZKlIiPr4CWJMcHP7WbbWnuwDXycLNiEJSEnkIMDFTtXpNdcl
+WLu/yIFAcaOdIpmhPnrTDwWsCuAPyLB6pKLPEuxbX6yL1W+w7qWJejn4BYsKEjgs
+3em1yR8Wwt7wvxDeufszkEqtn6Iuf7/+B0pRyEEZVgzdFlJEDCWi5f0tEP5E0ZPG
+AhoyqUo/j6QyuVeoCceacie3a1knPMUpA1jYUXZGSejLLbxrDsJkCrrfQ3CCQLh2
+PwAOWZEEnJsh5Afpg2nX+nufOfNg6CvkfGQ6bRYQl72F8GtrZWnI+V8lvoA6QLFc
+INgPKhhCzgyJw+Gt13K9Gf/30C63hAUox2DiaFOWN4uQeiyGc7qLoB+pOcfDv6tB
+Ydcq1DwcoytFe4o81QvjgOu8+kFZE6d/ezKsmm3No38hyE8640xMUde0ew8pIkTg
+yksvmrTHUkVnGV+aUoUzLrC2zK4FRlD/tTWECXiesIdsuyKeH30HoyAoivxk6o1g
+rwTLdhAjoE5RvLB1bGT6r771Pm+cGJEg0vQ90a1UAFmYhE/6eiKJICF7ZdwcLQ3Q
+d5HIy96XnjXKU9Pgt0sq854zrf3KHuexPfP3txt+YsTgaSlkr1MhpAlVAV2TvGrD
+i3eYyHHULpYt1aeEvrwtzdHdE10+RWzdx1E224XcU33dWWhFmlngFwnRVRwiQD+R
++uwXeZ/SoOTO2xLcMyRf2xXpWg3tBiVc5rRm6V1VrI/jzeDjeeiSjxwPQURsde5Z
+PQ73pefmq1RpJSdy/eiT8EjDQsgXb86Ueg==
+=t4bh
+-----END PGP MESSAGE-----

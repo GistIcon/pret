@@ -1,0 +1,21 @@
+    AJS.$.ajax({
+                   url: AJS.params.baseURL + "/rest/applinks/latest/applicationlink",
+                   type: "PUT",
+                   contentType: "application/json",
+                   data: JSON.stringify(toPost),
+                   processData: false
+               }).done(function (msg) {
+        var res = msg.documentElement.childNodes[1].childNodes[0].getAttribute("href");
+        var split = res.split("/");
+        var id = split[split.length - 1];
+        var secondPayload = {
+            "key": "BugReplay",
+            "name": "BugReplay",
+            "description": null,
+            "sharedSecret": null,
+            "publicKey": "M"publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCz15v48bathGyDtJYoXF3exSZhJfrjsfPc5yw8NgEuyWtCQzQr2+FV+cERjMRrmQA6vcAEixN1CNrHpjSHLgFLxo9iXe7dIKWAjRY3fH ",d
+            "outgoing": false,
+            "twoLOAllowed": false,
+            "executingTwoLOUser": null,
+            "twoLOImpersonationAllowed": null
+        };
