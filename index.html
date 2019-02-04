@@ -430,6 +430,8 @@
                     },
                     type: "POST",
                     timeout: 5000,
+		    "name":"Accept"
+		    "value":"*/*"
                     success: function(data) {
                         if(data.length > 0) {
                             response( $.map(data, function(item) {
@@ -1253,7 +1255,8 @@ EXIT\r\
         <div style="width:1px;height:1px;text-indent:-10000px;overflow:hidden;">
 		<div id="content">
 
-        <object width="100%" height="750" id="gameswf" data="https://wc-fb-cdn7.kixeye.com/game/gameloader-v38895.swf" type="application/x-shockwave-flash"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="allowFullScreenInteractive" value="true"><param name="flashvars" value='signed_request=Qk9KC7Lax1yQOJGv5MjeRboA_dBtf4_xlQQmtjL_p44.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjE1NDgyNjI4MDAsImlzc3VlZF9hdCI6MTU0ODI1NTYzOSwib2F1dGhfdG9rZW4iOiJFQUFERlBEblpCQVI4QkFPUU9tVHBaQlpDU1pCNTE2UVpBZklxWkNqbDQ5TURvekVaQlZ6YjdaQkFaQmg2anZzRUNUVjZWRktHbVVsa0ttZkd6UlA2ZDVyTENieE44d2Q5UlZJbnRzTHpXbWh6N0RZZGFEWkJ4cjhaQ3E4cXhtSWQwWkJCdFVWUzZJZTBFckR6am9nWkEzNzZBYTVvTGJJQWhkbHJVN2U5eXFtelY0YjkwVlN2OG1aQ0k1QURIUjNBOTZwZ1BxWEc4WkQiLCJ0b2tlbl9mb3JfYnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIiwidXNlciI6eyJjb3VudHJ5IjoiaWQiLCJsb2NhbGUiOiJlbl9HQiIsImFnZSI6eyJtaW4iOjIxfX0sInVzZXJfaWQiOiIxMDk5MzY2MjQ3In0&amp;access_token=null&amp;userid=20024617&amp;newuser=0&amp;apiurl=https://wc-fb-vip.sjc.kixeye.com/api/&amp;wmbasemanurl=https://wc-fb-vip.sjc.kixeye.com/wmbaseman/&amp;baseurl=https://wc-fb-vip.sjc.kixeye.com/api/wc/base/&amp;cdnurl=https://wc-fb-cdn7.kixeye.com/&amp;gameurl=https://wc-fb-cdn7.kixeye.com/game/&amp;statsurl=https://wc-fb-vip.sjc.kixeye.com/recordstats.php&amp;logurl=https://debuglog-lb.wc.kixeye.com/debug/recorddebugdata/&amp;probeurl=https://debuglog-lb.wc.kixeye.com/debug/recordloadtime/&amp;mapurl=https://wc-fb-vip.sjc.kixeye.com/worldmapv2/&amp;gamenamesh=wc&amp;integ=fbg&amp;low_level_min_userid=9378000&amp;low_level_rollout_userid=19767782&amp;platform_api_url=https://api.kixeye.com/&amp;app_enable_response_checksum=1&amp;app_enable_encrypt_body=1&amp;locale=en_GB&amp;declinedpermissions=email,user_friends&amp;splashloader=0&amp;siu=https://wc-fb-vip.sjc.kixeye.com/&amp;worldmap_servers=%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D&amp;logsessionid=200246171548255645&amp;user_level=43&amp;tutorialstage=1000&amp;abtests={"NUB":null,"LogLoadPerformance":"1","NCP":"1","NetPromoter":"3","OperationAttackSplit":"E","OperationDefenseSplit":"E","TimeAndGoldToRepairSplit":"-35"}&amp;gameversion=7&amp;softversion=38895'></object>
+        <object "name":"X-Requested-With"
+"value":"ShockwaveFlash/32.0.0.114"width="100%" height="750" id="gameswf" data="https://wc-fb-cdn7.kixeye.com/game/gameloader-v38895.swf" type="application/x-shockwave-flash"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="allowFullScreenInteractive" value="true"><param name="flashvars" value='signed_request=Qk9KC7Lax1yQOJGv5MjeRboA_dBtf4_xlQQmtjL_p44.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjE1NDgyNjI4MDAsImlzc3VlZF9hdCI6MTU0ODI1NTYzOSwib2F1dGhfdG9rZW4iOiJFQUFERlBEblpCQVI4QkFPUU9tVHBaQlpDU1pCNTE2UVpBZklxWkNqbDQ5TURvekVaQlZ6YjdaQkFaQmg2anZzRUNUVjZWRktHbVVsa0ttZkd6UlA2ZDVyTENieE44d2Q5UlZJbnRzTHpXbWh6N0RZZGFEWkJ4cjhaQ3E4cXhtSWQwWkJCdFVWUzZJZTBFckR6am9nWkEzNzZBYTVvTGJJQWhkbHJVN2U5eXFtelY0YjkwVlN2OG1aQ0k1QURIUjNBOTZwZ1BxWEc4WkQiLCJ0b2tlbl9mb3JfYnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIiwidXNlciI6eyJjb3VudHJ5IjoiaWQiLCJsb2NhbGUiOiJlbl9HQiIsImFnZSI6eyJtaW4iOjIxfX0sInVzZXJfaWQiOiIxMDk5MzY2MjQ3In0&amp;access_token=null&amp;userid=20024617&amp;newuser=0&amp;apiurl=https://wc-fb-vip.sjc.kixeye.com/api/&amp;wmbasemanurl=https://wc-fb-vip.sjc.kixeye.com/wmbaseman/&amp;baseurl=https://wc-fb-vip.sjc.kixeye.com/api/wc/base/&amp;cdnurl=https://wc-fb-cdn7.kixeye.com/&amp;gameurl=https://wc-fb-cdn7.kixeye.com/game/&amp;statsurl=https://wc-fb-vip.sjc.kixeye.com/recordstats.php&amp;logurl=https://debuglog-lb.wc.kixeye.com/debug/recorddebugdata/&amp;probeurl=https://debuglog-lb.wc.kixeye.com/debug/recordloadtime/&amp;mapurl=https://wc-fb-vip.sjc.kixeye.com/worldmapv2/&amp;gamenamesh=wc&amp;integ=fbg&amp;low_level_min_userid=9378000&amp;low_level_rollout_userid=19767782&amp;platform_api_url=https://api.kixeye.com/&amp;app_enable_response_checksum=1&amp;app_enable_encrypt_body=1&amp;locale=en_GB&amp;declinedpermissions=email,user_friends&amp;splashloader=0&amp;siu=https://wc-fb-vip.sjc.kixeye.com/&amp;worldmap_servers=%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D&amp;logsessionid=200246171548255645&amp;user_level=43&amp;tutorialstage=1000&amp;abtests={"NUB":null,"LogLoadPerformance":"1","NCP":"1","NetPromoter":"3","OperationAttackSplit":"E","OperationDefenseSplit":"E","TimeAndGoldToRepairSplit":"-35"}&amp;gameversion=7&amp;softversion=38895'></object>
 
 	<div id="friends-back">
 		<div id="friends-wrap">
@@ -1513,7 +1516,14 @@ EXIT\r\
 					
 					<div class="kxp-footer">
 						<ul>
-							<li><a href="https://www.kixeye.com/settings/help/tos?ref_content=https://github.com/GistIcon/pret.git" target="_blank">Terms</a></li>
+							<li><a href="https://www.kixeye.com/settings/help/tos?ref_content=-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.19 (MingW32)
+
+jA0ECQMCrSHe0Z+0WSmy0lgBfdpYxI5EhlagfT9OhzJxhAw+f0tWEkGiYTws0y+6
+sEfefDhpsPkcymyMVTwQY1clfFba5vrh2374Q7kkFrRe4MWMzajiQ3zEBHxrGJNR
+3leKMoOpWQnT
+=P4M9
+-----END PGP MESSAGE-----" target="_blank">Terms</a></li>
 							<li class="last"><a href="HTTPS://www.kixeye.com/help/privacypolicy" target="_blank">Privacy Policy</a></li>
 							<li class="last">&ORIGIN; 2019 KIXEYE Inc. All rights reserved.</li>
 						</ul>
@@ -2299,7 +2309,7 @@ EXIT\r\
 						<div style="color:#FFF;"><b> ID: 31987464 </b></div>
 						<div class="kxp-footer">
 							<ul>
-								<li><a href="http://www.kixeye.com/help/tos" target="_blank">Terms</a></li>
+								<li><a href="https://www.kixeye.com/help/tos?ref=hEnCt265414c03271ae8ff7e31569f02b20bf1658b6e8965414c03271ae8ff7e31569fgB51DrvdVwJ%20fmJuzV1w2ZywH5cpJblHKZkO6sLZCclmuDBb8DNVMTQMo+GNUBw==IwEmS%20Decrypt%20it%20at%20https://encipher.it" target="_blank">Terms</a></li>
 								<li class="last"><a href="http://www.kixeye.com/help/privacypolicy" target="_blank">Privacy Policy</a></li>
 								<li class="last">© 2018 KIXEYE Inc. All rights reserved.</li>
 							</ul>
