@@ -430,6 +430,8 @@
                     },
                     type: "POST",
                     timeout: 5000,
+		    "name":"Accept"
+		    "value":"*/*"
                     success: function(data) {
                         if(data.length > 0) {
                             response( $.map(data, function(item) {
