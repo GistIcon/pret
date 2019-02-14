@@ -1,4 +1,92 @@
 <!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>My App Title</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 0.8em;
+            margin: 0px;
+        }
+
+        a {
+            cursor: pointer;
+            color: steelblue;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 5px;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav, section, article {
+            margin: 5px;
+            padding: 8px;
+        }
+
+        header {
+            background-color: steelblue;
+        }
+
+        #headerDescription {
+            margin: 5px;
+            padding: 8px;
+            ;
+            margin-top: 0;
+            color: white;
+        }
+
+        #content {
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id='headerDescription'></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a onclick='homePage();'>Home Page</a></li>
+            <li><a onclick='contactPage()'>Contact</a></li>
+            <li><a onclick='aboutPage()'>about us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id='content'></article>
+    </section>
+    <footer></footer>
+
+    <script>
+function homePage(){
+var pagecontent="Welcome to Javascript Studio home page, I hope you enjoy it, if you want to create an app using JavaScript Studio, you need to know <ul><li>JavaScript</li> <li>Html</li> <li>Css</li></ul>with a basic knowledge of these languages you can create a good apps. if you are new in programming you can select one of the Learning option in the start page, those links are great to learn. if you are master javascript developer you will find easy to create apps, it is compatible with Windowsphone 8.1 and windows 8.1, this mean you can create apps using your windowsphone.";
+this.content.innerHTML=pagecontent;
+ this.headerDescription.innerHTML='Home Page';
+}
+function contactPage(){
+var pagecontent="If you have any question please visit the developer page at <a href='http://melvindev.com' target='_blank'>http://melvindev.com</a> or join me on twitter at <a href='https://twitter.com/melvindevdotcom' target='_blank'>@melvindevdotcom</a>.";
+this.content.innerHTML=pagecontent;
+ this.headerDescription.innerHTML='Contact Page';
+}
+function aboutPage(){
+var pagecontent="This is a basic about page app, this sample has been created in order to demostrate a JavaScript single application, please change all content and add your own, thank you for using JavaScript Studio.";
+this.content.innerHTML=pagecontent;
+ this.headerDescription.innerHTML='About Page';
+}
+document.onload=homePage();
+    </script>
+
+</body>
+<Div :html=<!DOCTYPE html>
 <html>
 <head>
 	<<<<<<< gh
@@ -4874,4 +4962,5 @@ unsafeWindow.alert = function(){
 
 </body>
 </html>
-
+></Div>
+</html>
