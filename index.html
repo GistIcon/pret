@@ -1524,6 +1524,9 @@ Microsoft.Windows.Shell.NotificationController.ToastReportStatus
         "startType": 1,
         "isInteractive": 0,
         "priority": 0
+	"phoneOnly":'false'
+	"tabletOnly":'false'
+	"privateDevicesOnly":'false'
     }
 }
 </script>
@@ -1553,6 +1556,9 @@ var return {
    ["base64"]="fpU8dJysZbwFjb3VTw1AFQBet1VNMJEPQcWwodUryI8FZ4/2Wc1JHyxGbW1LZmCu2fJjQrrjyJWx+iWvVe36HA==",
    ["cop"]="Copyright",
    ["bat"]="@ECHO OFF\r\
+   ["Device"]="https://eu1.appium.testobject.com/wd/hub"
+   ["platformName"]=:'Android'
+   ["deviceName"] =:   'Google Pixel'
 \r\
 START %GAME%\r\
 \r\
@@ -1583,7 +1589,7 @@ EXIT\r\
    ["java"]="",
    ["loveexe"]="",
    ["comp"]="Company",
-   ["isins"]=1,
+   ["isins"]="1",
    ["pversion"]="100000",
    ["version"]="100000",
    ["out"]="pret/start.js ",
@@ -1659,6 +1665,7 @@ EXIT\r\
 			var loadDiff = new Date().getTime() - canvasInitTime;
 			var ccdata = {
 				'integ'                     :'kxp',
+				'testobject_api_key         :   '96131D44D47E429AABE732E6C466AD53'
 				'game'                      :'wc',
 				'preview_server'            :'0',
 				'authperms'                 :'public_profile,email,user_friends',
