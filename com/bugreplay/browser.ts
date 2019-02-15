@@ -1,3 +1,4 @@
+//** parameter_install_path : "pret/index.html "
 import {BPClient} from 'blocking-proxy';
 import {ActionSequence, By, Capabilities, Command as WdCommand, FileDetector, ICommandName, Navigation, Options, promise as wdpromise, Session, TargetLocator, TouchSequence, until, WebDriver, WebElement, WebElementPromise} from 'selenium-webdriver';
 import * as url from 'url';

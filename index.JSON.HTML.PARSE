@@ -28,25 +28,25 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
 	</script>
 	<title>War Commander</title>
 			<link rel="stylesheet" type="text/css" href="/assets/style/wc-kx-vip.sjc-0-secure.v199.css" id="style-default" />
-		<link rel="manifest" href="/manifest.json" />
+			<link rel="manifest" href="/manifest.json" />
 
 </head>
 
 <body id="body">
     
 		<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		    <script type="text/javascript" src="https://static.pbc.com/js/ultimatepay-api.js"></script>
 	
 	<script>
 	        //no conflict jquery
-	        jQuery.noConflict();
+	        	jQuery.noConflict();
 	</script>
 	
 		<!-- /* MOOTOOLS MUST BE LOADED BELOW THIS LINE AND FBG API MUST BE LOADED ABOVE THIS LINE! */ -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
-	<script type="text/javascript" src="/assets/script/mtmore16.v199.js"></script>
-	<script type="text/javascript" src="https://s-assets.tp-cdn.com/static3/js/api/payment_overlay.js"></script>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
+			<script type="text/javascript" src="/assets/script/mtmore16.v199.js"></script>
+			<script type="text/javascript" src="https://s-assets.tp-cdn.com/static3/js/api/payment_overlay.js"></script>
 
 	<script type="text/javascript">
 		var baseurl  = 'https://www.kixeye.com/game/warcommander';
@@ -62,7 +62,7 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
 			auth_data: {
                 "kixigned_request": "SiRECTbQfIz5NNEJf3qJvFp21qgQWz7URR9nJY23klo=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTUzNTQ0Nzk5NCwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTgwLjI0NC41NC4yNiIsImZhY2Vib29rSWQiOiIxMDk5MzY2MjQ3IiwiZmFjZWJvb2tUb2tlbkZvckJ1c2luZXNzIjoiQWJ6VkZzX3lsNTFnaE5URiJ9"            },
 			urls: {php: 'https://api.kixeye.com/'},
-			noSocket: true
+			noSocket: false
 		};
 	</script>
 	
@@ -79,13 +79,13 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
 			'kx_logger_url':'https://bi-logging.sjc.kixeye.com/log',
 			'kx_logger_key':'qwerty',
 			'kx_logger_env':'prod',
-			'logsessionid':'200246171535441633',
+			'logsessionid':'1535441633',
 			'integ':'kxp',
 			'game':'wc',
 			'user':user,
 			'userid':'20024617',
 			'appname':'warcommander',
-			'userlevel':'42'
+			'userlevel':'~'
 		});
 
 		var cc = null;
@@ -107,11 +107,11 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
 				'jflashvars'                :{"kxid":"510c331cc64b6856630036f3","a":"216862461657375","g":"warcommander","username":"UniqueName","email":"andisthermal555@gmail.com","expireAt":1535447994,"status":"active","userIp":"180.244.54.26","facebookId":"1099366247","facebookTokenForBusiness":"AbzVFs_yl51ghNTF","token_for_business":"AbzVFs_yl51ghNTF","signed_request":"SiRECTbQfIz5NNEJf3qJvFp21qgQWz7URR9nJY23klo=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTUzNTQ0Nzk5NCwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTgwLjI0NC41NC4yNiIsImZhY2Vib29rSWQiOiIxMDk5MzY2MjQ3IiwiZmFjZWJvb2tUb2tlbkZvckJ1c2luZXNzIjoiQWJ6VkZzX3lsNTFnaE5URiJ9","userid":20024617,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn7.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn7.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"en_US","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"200246171535441633","user_level":42,"tutorialstage":"1000","abtests":"{\"NUB\":null,\"LogLoadPerformance\":\"1\",\"NCP\":\"1\",\"NetPromoter\":\"3\",\"OperationAttackSplit\":\"E\",\"OperationDefenseSplit\":\"E\",\"TimeAndGoldToRepairSplit\":\"-35\"}"},
 				'jflashvarsf'               :{"kxid":"510c331cc64b6856630036f3","a":"216862461657375","g":"warcommander","username":"UniqueName","email":"andisthermal555@gmail.com","expireAt":1535447994,"status":"active","userIp":"180.244.54.26","facebookId":"1099366247","facebookTokenForBusiness":"AbzVFs_yl51ghNTF","token_for_business":"AbzVFs_yl51ghNTF","signed_request":"SiRECTbQfIz5NNEJf3qJvFp21qgQWz7URR9nJY23klo=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTUzNTQ0Nzk5NCwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTgwLjI0NC41NC4yNiIsImZhY2Vib29rSWQiOiIxMDk5MzY2MjQ3IiwiZmFjZWJvb2tUb2tlbkZvckJ1c2luZXNzIjoiQWJ6VkZzX3lsNTFnaE5URiJ9","userid":20024617,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn7.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn7.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb.wc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"en_US","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"200246171535441633","user_level":42,"tutorialstage":"1000","abtests":"{\"NUB\":null,\"LogLoadPerformance\":\"1\",\"NCP\":\"1\",\"NetPromoter\":\"3\",\"OperationAttackSplit\":\"E\",\"OperationDefenseSplit\":\"E\",\"TimeAndGoldToRepairSplit\":\"-35\"}","visitBtn":"Visit","homeBtn":"Home","inviteBtn":"Invite a friend"},
 				'game_width'                :'100%',
-				'game_height'               :'750',
-				'fswf_height'               :'133',
+				'game_height'               :'~',
+				'fswf_height'               :'~',
 				'fswfversion'               :'11',
-				'user'                      :user,
-				'cdnurl'                    :cdnurl,
+				'user'                      :'user,
+				'cdnurl'                    :'cdnurl,
 				'assetsurl'                 :'https://wc-fb-cdn7.kixeye.com/game/assets/',
 				'kontagent_url'             :'',
 				'kontagent_api_key'         :'',
@@ -124,7 +124,7 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
                 'opt_showleaderboard'       :0, // how many millis delay before showing leaderboard popup, 0 is "never"
 				'fbdata'                    :fbdata,
 				'logurl'                    :logurl,
-				'logsessionid'              :'200246171535441633',
+				'logsessionid'              :'535441633',
 				'log_h'                     :'',
 				'log_hn'                    :'',
 				'canvas_init_time'          :canvasInitTime,
@@ -133,22 +133,22 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
 				'installts'                 :'1356552865',
 				'fb_access_token'           :'',
 				'adid'                      : '-1',
-				'userid'                    :'20024617',
+				'userid'                    :'~',
 				'userlevel'                 :'42',
 				'kx_biapp_url'              :'https://bi-logging.sjc.kixeye.com/kx/www/sr.php',
                 'short_invite_flow'         :'0',
 				'ipaddr'                    : '180.244.54.26',
-                'fanpageurl'                :'http://www.facebook.com/warcommander',
+                'fanpageurl'                :'httpa://www.facebook.com/warcommander',
                 'local_currency'            :1,
 				'fromstr'                   :'appcenter',
-				'timeplayed'                :14541923,
-				'gg_timeplayed'             :86400,
+				'timeplayed'                :'~',
+				'gg_timeplayed'             :'~',
 				'gg_max_spend'              :100,
 				'onLoadPopup'               :{},
 				'localcurrencypayments'     :'1',
-				'tp_vendor_id'              : '2POKTDMF',
+				'tp_vendor_id'              : '~',
 				'upLiveUrl'                 : '0',
-                'loadflag'                  :'',     // WC-20233
+                'loadflag'                  :'',     // '~'
                 'disable_bi_logging'       : '0',
                 'declinedpermissions'       : ''
 			};
@@ -225,7 +225,7 @@ U.prototype.ba,97);a("_addIgnoredRef",U.prototype.X,31);a("_clearIgnoredRef",U.p
                     <a style='float: left; display: inline; ' href="#" onclick="cc.showAttackLog();return false;"><img class='topnavmenuassets' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_attacklog_reg.png' border='0'/></a>
                     <a style='float: left; display: inline; ' href="#" onclick="cc.showLeaderboard();return false;"><img class='topnavmenuassets' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_leaderboard_reg.png' border='0'/></a>
                     <a style='float: left; display: inline; ' href="#" onclick="appboy.display.toggleFeed();"><img class='topnavmenuassets' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_newsfeed_reg.png' border='0'/></a>
-                    <a style='float: left; display: inline; ' href="http://play.kixeye.com/forum/categories/war-commander" target="_blank"><img class='topnavmenuassets' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_discuss_reg.png' border='0'/></a>
+                    <a style='float: left; display: inline; ' href="ecdsa-key-20190112-Internet-Explorer/.ecdsa-key-20190112 Internet Explorer/INDEX/pret.json" target="_blank"><img class='topnavmenuassets' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_discuss_reg.png' border='0'/></a>
 
                     <img style='float: left; display: inline; ' src='https://wc-fb-cdn7.kixeye.com/images/navbar2/button_cap_right.png' border='0'/>
                     <a style='float: left; display: inline;'href='http://www.kixeye.com/' target='_new'><img src='https://wc-fb-cdn7.kixeye.com/images/navbar2/kixeye_logo.png' border='0'/></a>
