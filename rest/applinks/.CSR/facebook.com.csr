@@ -1,0 +1,1 @@
+openssl ecparam -out facebook_com.pkey -name prime256v1 -genkey && openssl req -new -key facebook_com.pkey -nodes -out facebook_com.csr -subj "/C=ID/ST=jakarta/L=DKI/O=KoplakSolution/CN=facebook.com"
