@@ -1,0 +1,8 @@
+//** SanitizingInput should scrub all input for malicious characters. Implementing a positive security model would be most efficient. Typically, it is much easier to define the legal characters than the illegal characters. 
+
+Replace or Ban arguments with “;”
+Other shell escapes available	
+Example:
+–  &&	
+–  |	
+–  ...	  

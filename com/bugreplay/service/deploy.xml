@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swf path="Shared_Deploy_Capacity.swf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../uicontract.xsd">
+	<container path="Deploy.sharedCapacity"           name="deployCapacity">
+		<text path="TXT_troopTotal" lockey="popup_shareddeploy_capacity__troopTotal" name="troopTotalaText"/>
+		<text path="TXT_airTotal" lockey="popup_shareddeploy_capacity__airTotal" name="airTotalaText"/>
+		<text path="TXT_totalCapacity" lockey="popup_shareddeploy_capacity__capTotal" name="totalCapText"/>
+	</container>
+	<container path="Deploy.groundCapacity"           name="groundDeployCapacity">
+		<text path="TXT_troopTotal" lockey="popup_shareddeploy_depositcapacity__troopDepositTotal" name="troopDepositTotalaText"/>
+	</container>
+</swf>
