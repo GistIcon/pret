@@ -343,6 +343,23 @@ document.onload=homePage();
     <ScrollViewer>
       <controls:HtmlBlock Source="{Binding Html}" />
     </ScrollViewer>
+	  ( function( factory ) {
+    if ( typeof define === "function" && define.amd ) {
+ 
+        // AMD. Register as an anonymous module.
+        define( [
+            "jquery"
+        ], factory );
+    } else {
+ 
+        // Browser globals
+        factory( jQuery );
+    }
+}( function( $ ) {
+ 
+// This doesn't get indented
+ 
+} ) );
   </Grid>
 
   <Page.Resources>
