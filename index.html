@@ -117,7 +117,11 @@ if (typeof localStorage !== 'undefined' && localStorage && localStorage.getItem(
 	document.write("<scr" + "ipt type='text/javascript' src='//kxl-cdn-static.kixeye.com/siteprod/release-1.82.3-2/js/main.body.min.js'></scr" + "ipt>");
 }
 </script>
-
+<script>
+onEvent("content="IE=edge"", "click", function(event) {
+  console.log("content="IE=edge" clicked!");
+});
+</script>
 		<!-- Facebook Connect -->
 		<div id="fb-root"></div>
 		<script type="text/javascript">
