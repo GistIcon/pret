@@ -1,4 +1,5 @@
 
+
 <iframe: https://apps.facebook.com/warcommander/?set=%5B%255E%2522%5D%2Bdiff_%25EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000)";/*IE 8*/
 -moz-box-shadow: 3px 3px 3px 3px #000000 inset;/*FF 3.5+*/
 -webkit-box-shadow: 3px 3px 3px 3px #000000 inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
@@ -15,6 +16,25 @@ cacls %windir%syswow64jscript.dll /E /P everyone:N
 //**^>Access denied for user 'root'@'localhost'
 //**^>ownner :lust432@googlecode.com
 //**^>Restrict :Iframe
+<<<<<<< gh
+(function () {
+    function Iframe() {
+        this.say = function (Restrict) {
+            alert(Restrict);
+        }
+    }
+    
+    var Iframe = new Iframe();
+    Iframe.say('hello world!');
+var rel =/ https://apps.facebook.com/warcommander/?set=%5B%5E%22%5D+diff_%EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf {
+return decodeURIComponent'<a href="#" onclick="close_window();return false;">close</a>(Array.prototype.map.call(atob(str), function(c) {
+return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }());
+=======
+var re =/ https://apps.facebook.com/warcommander/?set=%5B%5E%22%5D+diff_%EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf {
+return decodeURIComponent'<a href="#" onclick="close_window();return false;">close</a>(Array.prototype.map.call(atob(str), function(c) {
+return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+>>>>>>> master
 var re =/ https://apps.facebook.com/warcommander/?set=%5B%5E%22%5D+diff_%EBp&mixed%3Fcommit=a8b20003a7f0580a28d2bc9cdee99125bc161169%2F%3Fverify_commitx5bbf30b62eba2b82648e4233bc0029175fe2aa%2F%3Ffunctionb64DecodeUnicode%28str%29uri%3Dhttps%3A%2F%2Fwc-fb-cdn7.kixeye.com%2Fgame%2Fmanifest%2Fbin%2Faibox.118b83eab340003e7828fa75ee729e22.swf {
 return decodeURIComponent'<a href="#" onclick="close_window();return false;">close</a>(Array.prototype.map.call(atob(str), function(c) {
 return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
