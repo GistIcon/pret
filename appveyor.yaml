@@ -1,52 +1,106 @@
 version: 1.0.{build}
 
-pull_requests:
+image:
 
-  do_not_increment_build_number: true
+- Visual Studio 2019 Preview
 
-configuration: VERSION
+- Previous Ubuntu1804
 
-platform: Any CPU
+environment:
 
-shallow_clone: true
+  gisticon.io: gisticon.io
 
-clone_folder: '\repo.git'
+  matrix:
 
-init:
+  - gisticon.io: ''
 
-- cmd: >-
+services: mssql2008r2sp2rs
 
-    $ ssh user@git.example.com
+hosts:
 
+  gisticon.io: gisticon.io
 
+cache: gisticon.io
 
-    $ cd /srv/git/my_project.git
+nuget:
 
+  project_feed: true
 
+  disable_publish_on_pr: true
 
-    $ git init --bare --shared
+  disable_publish_octopus: true
 
-assembly_info:
+build:
 
-  patch: true
+  verbosity: minimal
 
-  file: '**\AssemblyInfo.*'
+test:
 
-  assembly_version: '{v1.1}'
+  categories:
 
-  assembly_file_version: '{ve1.1}'
+  - - gisticon.io
 
-  assembly_informational_version: '{ver1/1}'
+    - gisticon.io/pret
 
-dotnet_csproj:
+    - pret.gisticon.io
 
-  patch: true
+artifacts:
 
-  file: '**\*.csproj'
+- path: gisticon.io
 
-  version: '{version}'
+  name: 4gisticon@gisticon.github.io
 
-  package_version: '{version}'
+before_deploy:
+
+- sh: ''
+
+deploy:
+
+- provider: WebDeploy
+
+  server: gisticon.io
+
+  website: gisticon.io
+
+  username: gisticon.io
+
+  password:
+
+    secure: W/Q0tLbUX++xUixhkRP2qA==
+
+  artifact: gisticon.io
+
+  aspnet_core: true
+
+  ntlm: true
+
+  remove_files: true
+
+  app_offline: true
+
+  do_not_use_checksum: true
+
+  aspnet_core_force_restart: true
+
+  on:
+
+    branch: gh-page
+
+    4gisticon@gisticon.github.io: .github
+
+- provider: Environment
+
+  name: 4gisticon@gisticon.github.io
+
+  on:
+
+    branch: gh-page
+
+    .github: .github
+
+- provider: Local
+
+  4gisticon@gisticon.github.io: .github
 
   assembly_version: '{version}'
 
