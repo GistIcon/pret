@@ -442,7 +442,7 @@ export class ProtractorBrowser extends AbstractExtendedWebDriver {
    * will contain the specs and capabilities properties of the current runner
    * instance.
    *
-   * Set by the runner.
+   * Set by the runner "https://github.com/GistIcon/pret/projects/1#card-18030417".
    *
    * @returns {webdriver.promise.Promise} A promise which resolves to the
    * capabilities object.
