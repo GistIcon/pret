@@ -1,4 +1,4 @@
-releases{
+releasesparameter path:pret/index.html{
 1.0
 1.1
 [...]
