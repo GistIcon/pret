@@ -1,3 +1,4 @@
+path: _github-challenge-GistIcon/tmp/cache/.io 
 ;
 (function (AJS, $, window, document, undefined) {
     "use strict";

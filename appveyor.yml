@@ -1,8 +1,109 @@
+version: 1.1{build}
+pull_requests:
+  do_not_increment_build_number: true
+branches:
+  only:
+  - master
+configuration: VERSION
+platform: Any CPU
+shallow_clone: true
+clone_folder: '\repo.git'
+init:
+- cmd: >-
+    $ ssh user@git.example.com
+
+    $ cd /srv/git/my_project.git
+
+    $ git init --bare --shared
+clone_script:
+- cmd: >-
+    git@github.com:GistIcon/pret.git
+
+    https://github.com/GistIcon/pret.git
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{v1.1}'
+  assembly_file_version: '{ve1.1}'
+  assembly_informational_version: '{ver1/1}'
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+environment:
+  $ git clone: '*******'
+  project.git: '*******'
+  matrix:
+  - git: '*******'
+  - {}
+  - {}
+services:
+- mssql2017
+- mysql
+hosts:
+  kixeye.com: 54.148.45.119
+install:
+- cmd: $ git clone user@git.example.com:/srv/git/my_project.git
+nuget:
+  project_feed: true
+  disable_publish_on_pr: true
+  disable_publish_octopus: true
+before_build:
+- cmd: "test .git Conflicting files .git[https://github.com/GistIcon/pret/pull/16/conflicts]\ntest .git var swf/end_=_.swift \ntest .git var swf/java./tab.js \ntest .git var xml./surebugnotme.xml"
+build:
+  publish_wap: true
+  publish_azure: true
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  publish_aspnet_core: true
+  publish_core_console: true
+  parallel: true
+  verbosity: minimal
+before_package:
+- cmd: "test .git Conflicting files .git[https://github.com/GistIcon/pret/pull/16/conflicts]\ntest .git var swf/end_=_.swift \ntest .git var swf/java./tab.js \ntest .git var xml./surebugnotme.xml"
+after_build:
+- cmd: "test .git Conflicting files .git[https://github.com/GistIcon/pret/pull/16/conflicts]\ntest .git var swf/end_=_.swift \ntest .git var swf/java./tab.js \ntest .git var xml./surebugnotme.xml"
+artifacts:
+- path: pret
+  name: pret
+before_deploy:
+- pwsh: >-
+    $ ssh user@git.example.com
+
+    $ cd /srv/git/my_project.git
+
+    $ git init --bare --shared
 deploy:
-  provider: S3
-  access_key_id:
-    secure: <encrypted-access-key-id>
-  secret_access_key:
-    secure: <encrypted-access-key-secret>
-  bucket: <your-bucket>
-  folder: $(APPVEYOR_PROJECT_SLUG)/$(APPVEYOR_BUILD_VERSION)
+- provider: Webhook
+  url: https://github.com/GistIcon/pret/settings/hooks/54354783
+  authorization:
+    secure: kQaolyMV6oTHESm1TrFpDQ==
+  request_timeout: 1
+  on:
+    branch: master
+    pret: '******'
+- provider: NuGet
+  api_key:
+    secure: 8wV9U2DcPnH3tBbbyB2OhCNMipJCVynuRwr5J5Wj2Fc=
+  skip_symbols: true
+  on:
+    branch: master
+    project feed: '******'
+after_deploy:
+- pwsh: $ git clone user@git.example.com:/srv/git/my_project.git
+notifications:
+- provider: Webhook
+  url: https://github.com/GistIcon/pret/settings/hooks/76124641
+  method: POST
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
+on_success:
+- cmd: git@github.com:GistIcon/pret.git
+on_finish:
+- cmd: git@github.com:GistIcon/pret.git

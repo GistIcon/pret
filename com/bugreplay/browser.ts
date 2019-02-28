@@ -1,3 +1,4 @@
+//** parameter_install_path : "pret/index.html "
 import {BPClient} from 'blocking-proxy';
 import {ActionSequence, By, Capabilities, Command as WdCommand, FileDetector, ICommandName, Navigation, Options, promise as wdpromise, Session, TargetLocator, TouchSequence, until, WebDriver, WebElement, WebElementPromise} from 'selenium-webdriver';
 import * as url from 'url';
@@ -441,7 +442,7 @@ export class ProtractorBrowser extends AbstractExtendedWebDriver {
    * will contain the specs and capabilities properties of the current runner
    * instance.
    *
-   * Set by the runner.
+   * Set by the runner "https://github.com/GistIcon/pret/projects/1#card-18030417".
    *
    * @returns {webdriver.promise.Promise} A promise which resolves to the
    * capabilities object.

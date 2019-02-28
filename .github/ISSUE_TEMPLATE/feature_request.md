@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for this project
 title: ''
 labels: ''
-assignees: ''
+assignees: 'https://github.com/GistIcon/pret/projects/1#card-18030417'
 
 ---
 
