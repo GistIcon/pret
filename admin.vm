@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>$i18n.getText("bugreplay.admin.title")</title>
+    <meta name="decorator" content="atl.admin"/>
+    $webResourceManager.requireResource("com.bugreplay.applink-generator-plugin:bugreplay-admin-web-resources")
+    <meta name="application-base-url" content="$applicationProperties.getBaseUrl()">
+</head>
+<body>
+
+<h2>$i18n.getText("bugreplay.admin.title")</h2><br/>
+
+<div id="aui-message-bar"></div>
+
+<form id="admin" class="aui">
+    <p class="aui-buttons">
+        <button id="bugreplay-create" class="aui-button">Create</button>
+        <button id="bugreplay-delete" class="aui-button">Delete</button>
+    </p>
+</form>
+
+</body>
+</html>

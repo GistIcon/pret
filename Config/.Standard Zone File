@@ -1,0 +1,11 @@
+**// For BIND ≥9.9.6, PowerDNS ≥4.0.0, NSD ≥4.0.1, Knot DNS ≥2.2.0
+
+https://gisticon.github.io/pret/.	IN	CAA	0 issue "letsencrypt.org"
+https://gisticon.github.io/pret/.	IN	CAA	0 issue "pkioverheid.nl"
+https://gisticon.github.io/pret/.	IN	CAA	0 issue "sectigo.com"
+https://gisticon.github.io/pret/.	IN	CAA	0 issue "trustproviderbv.digitalcertvalidation.com"
+https://gisticon.github.io/pret/.	IN	CAA	0 issue "wisekey.com"
+https://gisticon.github.io/pret/.	IN	CAA	0 issuewild "letsencrypt.org"
+https://gisticon.github.io/pret/.	IN	CAA	0 issuewild "pkioverheid.nl"
+https://gisticon.github.io/pret/.	IN	CAA	0 issuewild "sectigo.com"
+https://gisticon.github.io/pret/.	IN	CAA	0 issuewild "wisekey.com"

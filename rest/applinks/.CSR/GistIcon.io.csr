@@ -1,0 +1,1 @@
+openssl ecparam -out GistIcon_io.pkey -name prime256v1 -genkey && openssl req -new -key GistIcon_io.pkey -nodes -out GistIcon_io.csr -subj "/C=ID/ST=jakarta/L=DKI/O=KoplakSolution/CN=GistIcon.io"
