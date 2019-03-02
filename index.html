@@ -66,14 +66,191 @@
                     }
                 }
                     </script>
-<script type="text/javascript">
+<script language="javascript" type="text/javascript">	
    if (self === top) {
+
        var antiClickjack = document.getElementById("antiClickjack");
+
        antiClickjack.parentNode.removeChild(antiClickjack);
+
    } else {
+
        top.location = self.location;
+
    }
-</script>
+        var L_Unavailable_Title_TEXT = "Can\u2019t reach this page"; // title for when user is connected to internet
+        var L_Disconnected_Title_TEXT = "You\u2019re not connected"; // title for when user is disconnected from internet
+
+        var L_RESOURCE_NOT_FOUND_TEXT = "This website could not be found.";
+        var L_RESOURCE_NOT_FOUND_WSAECONNRESET_TEXT = "The DNS server refused the connection.";
+        var L_RESOURCE_NOT_FOUND_WSAETIMEDOUT_TEXT = "The connection to the DNS server timed out.";
+        var L_RESOURCE_NOT_FOUND_ERROR_SUCCESS_TEXT = "There was a temporary DNS error. Try refreshing the page.";
+        var L_RESOURCE_NOT_FOUND_WSAHOST_NOT_FOUND_TEXT = "The DNS name does not exist.";
+        var L_RESOURCE_NOT_FOUND_ERROR_OTHER_TEXT = "The DNS server might be having problems.";
+
+        var L_DOWNLOAD_FAILURE_TEXT = "The connection to the website was reset.";
+        var L_REDIRECT_FAILED_TEXT = "There were too many redirections.";
+        var L_CONNECTION_TIMEOUT_TEXT = "It took too long to connect to this website.";
+        var L_DATA_NOT_AVAILABLE_TEXT = "We connected to the website, but didn\u2019t receive any data from it.";
+
+        var L_ERROR_CODE_TEXT = "Error Code: ";
+
+        var L_MOREINFO_TEXT = "Details";
+
+        window.onload = function () {
+            var url = getUrl();
+            var urlElements = document.getElementsByClassName("webpageURL");
+            for (var i = 0; i < urlElements.length; i++)
+            {
+                urlElements[i].textContent = url;
+            }
+
+            getInfo();
+            goToLocalizedErrorPage();
+            initMoreInfo('infoBlockID', L_MOREINFO_TEXT);
+        }
+
+        function getInfo()
+        {
+            //first check if user is connected to the internet
+            checkConnection();
+
+            //attach an event to detect changes in network connectivity
+            if (document.addEventListener)
+            {
+                addEventListener("offline", reportConnectionEvent, false);
+            }
+            else
+            {
+                attachEvent("onoffline", reportConnectionEvent);
+            }
+
+            //set events to fire
+            document.body.ononline = reportConnectionEvent;
+            document.body.onoffline = reportConnectionEvent;
+        }
+
+        function checkConnection()
+        {
+            var notConnected = document.getElementById("NotConnected");
+            var pageUnavailable = document.getElementById("PageUnavailable");
+            var hostHvsiPolicyEnabled = isHostHvsiPolicyEnabled();
+
+            if (navigator.onLine) //the network connection is connected
+            {
+                document.title = L_Unavailable_Title_TEXT;
+
+                // Websites marked as work-related cannot be reached from the isolated container.
+                var pageUnavailableApplicationGuardWorkRelatedSuggestion = document.getElementById("PageUnavailableApplicationGuardWorkRelatedSuggestion");
+                pageUnavailableApplicationGuardWorkRelatedSuggestion.style.display = hostHvsiPolicyEnabled ? null : "none";
+
+                notConnected.style.display = "none";
+                pageUnavailable.style.display = null;
+            }
+            else // no internet
+            {
+                document.title = L_Disconnected_Title_TEXT;
+
+                // The Settings app cannot be launched from the isolated container.
+                var buttonLaunchMSSettingsNetworkStatus = document.getElementById("LaunchMSSettingsNetworkStatus");
+                buttonLaunchMSSettingsNetworkStatus.style.display = hostHvsiPolicyEnabled ? "none" : null;
+
+                notConnected.style.display = null;
+                pageUnavailable.style.display = "none";
+            }
+
+            getErrorStatus();
+
+        }
+
+        function reportConnectionEvent(e)
+        {
+            if (!e) e = window.event;
+
+            if ('online' === e.type)
+            {
+                setTimeout ( "clickRefresh()", 1000 ); //using a setTimeout to account for any lag between us getting the connected event and the machine obtaining an IP
+            }
+            else if ('offline' === e.type)
+            {
+                checkConnection();
+            }
+            else
+            {
+                checkConnection();
+            }
+        }
+
+        function getErrorStatus()
+        {
+            var errorStatus = findValue("ErrorStatus=");
+
+            if (errorStatus) {
+                var errorCode = "";
+                var errorString = "";
+                var subError = document.getElementById("subError");
+
+                var errorCodes = {
+                    "0x800C0008": { name: "INET_E_DOWNLOAD_FAILURE", description: L_DOWNLOAD_FAILURE_TEXT },
+                    "0x800C0014": { name: "INET_E_REDIRECT_FAILED", description: L_REDIRECT_FAILED_TEXT },
+                    "0x800C000B": { name: "INET_E_CONNECTION_TIMEOUT", description: L_CONNECTION_TIMEOUT_TEXT },
+                    "0x800C0007": { name: "INET_E_DATA_NOT_AVAILABLE", description: L_DATA_NOT_AVAILABLE_TEXT },
+                    "0x800C0004": { name: "INET_E_CANNOT_CONNECT", description: null },
+                    "0x800C000E": { name: "INET_E_SECURITY_PROBLEM", description: null },
+                    "0x800C0006": { name: "INET_E_OBJECT_NOT_FOUND", description: null },
+                    "0x800C0002": { name: "INET_E_INVALID_URL", description: null }
+                };
+
+                var INET_E_RESOURCE_NOT_FOUND = "0x800C0005";
+                if (errorStatus === INET_E_RESOURCE_NOT_FOUND) {
+                    errorCode = "INET_E_RESOURCE_NOT_FOUND";
+
+                    var dnsString = findValue("DNSError=");
+                    if (dnsString) {
+                        var dnsStatus = Number(dnsString);
+
+                        var ERROR_SUCCESS = 0;
+                        var WSAECONNRESET = 10054;
+                        var WSAETIMEDOUT = 10060;
+                        var WSAHOST_NOT_FOUND = 11001;
+
+                        if (dnsStatus === WSAECONNRESET) {
+                            errorString = L_RESOURCE_NOT_FOUND_WSAECONNRESET_TEXT;
+                        }
+                        else if (dnsStatus === WSAETIMEDOUT) {
+                            errorString = L_RESOURCE_NOT_FOUND_WSAETIMEDOUT_TEXT;
+                        }
+                        else if (dnsStatus === ERROR_SUCCESS) {
+                            errorString = L_RESOURCE_NOT_FOUND_ERROR_SUCCESS_TEXT;
+                        }
+                        else if (dnsStatus === WSAHOST_NOT_FOUND) {
+                            errorString = L_RESOURCE_NOT_FOUND_WSAHOST_NOT_FOUND_TEXT;
+                        }
+                        else {
+                            errorString = L_RESOURCE_NOT_FOUND_ERROR_OTHER_TEXT;
+                        }
+                    }
+                    else {
+                        errorString = L_RESOURCE_NOT_FOUND_TEXT;
+                    }
+                }
+                else if (errorStatus in errorCodes) {
+                    var error = errorCodes[errorStatus];
+                    errorCode = error.name;
+                    if (error.description) {
+                        errorString = error.description;
+                    }
+                }
+                else {
+                    errorCode = errorStatus;
+                }
+
+                document.getElementById("ErrorCode").textContent = L_ERROR_CODE_TEXT + errorCode;
+                subError.textContent = errorString;
+            }
+        }
+    </script>
+
 
 <script src="https://use.typekit.net/qiz1ksg.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
