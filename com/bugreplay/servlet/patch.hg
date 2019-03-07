@@ -1,0 +1,46 @@
+# HG changeset patch
+# User Maxim Dounin <mdounin@mdounin.ru>
+# Date 1551792859 -10800
+# Node ID 49f9d2f7d8877cf7d86fc43c07ef86fc494175bc
+# Parent  3f1db95d758ab6b331065e99df47666bb1ed5e06
+SSL: moved c->ssl->handshaked check in server name callback.
+
+Server name callback is always called by OpenSSL, even
+if server_name extension is not present in ClientHello.  As such,
+checking c->ssl->handshaked before the SSL_get_servername() result
+should help to more effectively prevent renegotiation in
+OpenSSL 1.1.0 - 1.1.0g, where neither SSL3_FLAGS_NO_RENEGOTIATE_CIPHERS
+nor SSL_OP_NO_RENEGOTIATION is available.
+
+diff -r 3f1db95d758a -r 49f9d2f7d887 src/http/ngx_http_request.c
+--- a/src/http/ngx_http_request.c	Sun Mar 03 16:49:02 2019 +0300
++++ b/src/http/ngx_http_request.c	Tue Mar 05 16:34:19 2019 +0300
+@@ -864,12 +864,6 @@
+     ngx_http_core_loc_conf_t  *clcf;
+     ngx_http_core_srv_conf_t  *cscf;
+ 
+-    servername = SSL_get_servername(ssl_conn, TLSEXT_NAMETYPE_host_name);
+-
+-    if (servername == NULL) {
+-        return SSL_TLSEXT_ERR_OK;
+-    }
+-
+     c = ngx_ssl_get_connection(ssl_conn);
+ 
+     if (c->ssl->handshaked) {
+@@ -877,6 +871,12 @@
+         return SSL_TLSEXT_ERR_ALERT_FATAL;
+     }
+ 
++    servername = SSL_get_servername(ssl_conn, TLSEXT_NAMETYPE_host_name);
++
++    if (servername == NULL) {
++        return SSL_TLSEXT_ERR_OK;
++    }
++
+     ngx_log_debug1(NGX_LOG_DEBUG_HTTP, c->log, 0,
+                    "SSL server name: \"%s\"", servername);
+ 
+
+
+set 限制解除 
