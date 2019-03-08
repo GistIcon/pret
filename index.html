@@ -2538,7 +2538,8 @@ $('#companyName').autocomplete({
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="https://static.pbc.com/js/ultimatepay-api.js"></script>
         </script>
-        <script>
+
+		    <script>
             const express = require('express');
         const app = express();
 
@@ -2558,6 +2559,14 @@ $('#companyName').autocomplete({
         <script type="text/javascript" src="/assets/script/mtmore16.v199.js"></script>
         <script type="text/javascript" src="https://s-assets.tp-cdn.com/static3/js/api/cancel_payment_overlay.js"></script>
         <script type="text/javascript">
+		// find elements
+var banner = $("#banner-message")
+var button = $("button")
+
+// handle click and add class
+button.on("click", function(){
+  banner.addClass("alt")
+})
             var baseurl  = 'https://www.kixeye.com/game/warcommander';
         var localurl = 'https://wc-kx-vip.sjc.kixeye.com/';
         var cdnurl   = 'https://wc-fb-cdn7.kixeye.com/';
