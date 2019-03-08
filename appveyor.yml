@@ -1,3 +1,6 @@
+environment:
+  my_variable:
+    secure: R8uzL72C7o0ESrXZWcbPGDLLihdQ24eK0fwjiqKmIX7QYsg4iuNCnwUPGhxrPn0vt+a5Sf+HC1EiCLmMzqFsjg==
 version: 1.1{build}
 pull_requests:
   do_not_increment_build_number: true
