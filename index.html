@@ -1,6 +1,60 @@
 <!--
                  function functionName(hide) {
                    // git@github.com:GistIcon/PATH.USER.git
+<div id="banner-message">
+  <p>See CSS panel to see definitions of "custom selectors" and "custom properties"</p>
+  <button>Hover to change color</button>
+</div>
+<style =@custom-selector :--enter :hover, :focus;
+
+:root {
+  --button-theme: {
+    background: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 15px;
+    color: #fff;
+  }
+  --message-theme: {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 auto;
+    width: 300px;
+  }
+  --message-theme-enter: {
+    background: #0084ff;
+    color: #fff;
+    margin-top: 10px;
+    width: 300px;
+  }
+  --button-theme-enter: {
+    background: #fff;
+    color: #000;
+  }
+}
+
+body {
+  background: #20262E;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+#banner-message {
+  @apply --message-theme;
+}
+
+button {
+  @apply --button-theme;
+}
+
+#banner-message:--enter {
+  @apply --message-theme-enter;
+}>...</style>
                 BSD 3-Clause License
 
 Copyright (c) 2018, 
